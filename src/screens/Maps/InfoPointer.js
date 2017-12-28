@@ -49,23 +49,47 @@ const pm10 = [
   [431, 500],
 ];
 
-let maxValue;
 
-const checkConcectration = (arr, value) => {
+const checkConcentration = (arr, value) => {
   for (let i = 0; i < arr.length; i++) {
     if (value > arr[i][0] && value < arr[i][1])
       return aqi[i][0] + (arr[i][1] - arr[i][0]) / (aqi[i][1] - aqi[i][0]) * arr[i][1] - value;
   }
+  return 0;
 }
 
+const getAqi = (point)=>getMaxValue(point);
+
+export {getAqi};
+
+const getMaxValue = (point)=> {
+  if (point.properties) {
+    const prop = point.properties;
+    const no2Contentration = checkConcentration(no2, prop.no2);
+    const pm10Concentration = checkConcentration(pm10, prop.pm10);
+
+    const max = Math.max(no2Contentration, pm10Concentration);
+    const result = Math.floor(max);
+    if(Number.isNaN(result)){
+      console.log("NaN",this.props.pointData);
+      console.log(no2Contentration);
+      console.log(pm10Concentration);
+    }
+    return Math.floor(max);
+  }
+}
 
 export class InfoPointer extends React.Component {
   constructor(props) {
     super(props);
+    const max = getMaxValue(this.props.pointData);
+
     this.state = {
       symbolWidth: new Animated.Value(30),
-      color: this.getColor(),
-      maxValue: maxValue,
+      color: this.getColor(max),
+      maxValue: max,
+      detailView:false,
+      zIndex:-1
     }
     // console.log(this.state.symbolWidth);
   }
@@ -83,14 +107,9 @@ export class InfoPointer extends React.Component {
     // this.setState({symbolWidth : 100});
   }
 
-  getColor() {
-    if (this.props.pointData.properties) {
-      const prop = this.props.pointData.properties;
-      const no2Contentration = checkConcectration(no2, prop.no2);
-      const pm10Concentration = checkConcectration(pm10, prop.pm10);
 
-      const max = Math.max(no2Contentration, pm10Concentration);
-      maxValue = Math.floor(max);
+
+  getColor(max) {
       if (max > aqi[5][0]) {
         return "#A52A2A";
       } else if (max > aqi[4][0]) {
@@ -106,10 +125,10 @@ export class InfoPointer extends React.Component {
       }
     }
 
-
+  handleClick(){
+    this.setState({detailView:!this.state.detailView,zIndex:!this.state.detailView?1:-1});
   }
-
-  render() {
+  render(){
     function random(max) {
       return Math.round(Math.random() * max);
     }
@@ -117,6 +136,21 @@ export class InfoPointer extends React.Component {
     const color = this.state.color;
 
     const markerWidth = 50;
+    let markerView;
+    if(this.state.detailView){
+      markerView = (
+          <PointInfo point={this.props.pointData}/>
+      )}else{
+      markerView = null;
+      //     (
+      //     <View>
+      //       {/*<Image source={require('GeoPrototype/assets/location/info-marker.png')} style={styles.infoPoint_image}/>*/}
+      //       <View style={[styles.infoPoint_view,{backgroundColor:this.state.color}]}>
+      //         <Text style={styles.infoPoint_text}>{this.state.maxValue}</Text>
+      //       </View>
+      //     </View>
+      // )
+    }
     // console.log(this.props.pointData);
     if (this.props.pointData)
       return ([
@@ -134,6 +168,7 @@ export class InfoPointer extends React.Component {
         ,
         <MapView.Marker
             key={1}
+            zIndex = {this.state.zIndex}
             // image = {require('ParkingWatcher/assets/location/info-marker.png')} style={{width:25}}
             onPress={() => this.handleClick()}
             // onPress={this.props.onPress}
@@ -142,10 +177,7 @@ export class InfoPointer extends React.Component {
               longitude: this.props.pointData.geometry.coordinates[1],
             }}
         >
-          <View>
-            <Image source={require('GeoPrototype/assets/location/info-marker.png')} style={styles.infoPoint_image}/>
-            <View style={styles.infoPoint_view}/>
-          </View>
+          {/*{markerView}*/}
           <MapView.Callout>
             <PointInfo point={this.props.pointData}/>
           </MapView.Callout>
@@ -156,22 +188,28 @@ export class InfoPointer extends React.Component {
 }
 
 const styles = StyleSheet.create({
-  infoPoint_image:{
+  infoPoint_image: {
     width: 50,
     height: 50
   },
+  infoPoint_text: {
+
+  },
   infoPoint_view: {
-    position: "absolute",
-    marginTop:5,
-    marginLeft:5,
-    marginBottom:20,
-    marginRight:5,
-    flex:1,
-    // width: 15,
-    // height: 15,
-    borderRadius: 5,
+    // position: "absolute",
+    // marginTop: 6,
+    // marginLeft: 6,
+    // marginBottom: 0,
+    // marginRight: 5,
+    borderColor:"black",
+    // flex: 1,
+    width: 38,
+    height: 22,
+    borderRadius: 4,
     backgroundColor: "#51ff4c",
-    overflow: "hidden"
+    overflow: "hidden",
+    alignItems: "center",
+    justifyContent: "center"
   }
 })
 

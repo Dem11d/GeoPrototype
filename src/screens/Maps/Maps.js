@@ -13,10 +13,12 @@ import {
 } from "native-base";
 import {InfoPointer} from "./InfoPointer";
 import Gradient from "./Gradient";
+import {getAqi} from "./InfoPointer";
 
 let dataPoints = (require('GeoPrototype/assets/testdata.json').docs.map(point => {
   point.geometry.coordinates[0] = 180 * Math.random() - 90;
   point.geometry.coordinates[1] = 360 * Math.random() - 180;
+  point.properties.no2 = 400 * Math.random();
   return point;
 }));
 
@@ -27,8 +29,10 @@ export default class Maps extends React.Component {
 
     this.state = {
       data: [],
-
+      filterData: [0, 500],
       points: [],
+      latitude:49.05053875348836,
+      longitude: 31.361325569450855,
       latitudeDelta: 0.0000467769713,
       longitudeDelta: 0.0421,
       error: null,
@@ -78,34 +82,40 @@ export default class Maps extends React.Component {
   }
 
   _showPointModal = () => this.setState({isPointModalVisible: true});
+  _changeFilter = (filterData) => {
+    this.setState({filterData: filterData})
+  };
 
   render() {
     let content;
     if (this.state.ready) {
       content = (
           <View style={styles.container}>
-            <MapView style={styles.map}
-                     showsScale={true}
-                     showsPointsOfInterest={true}
-                // showsUserLocation={true}
-                     showsMyLocationButton={true}
-                //followUserLocation
-                     mapType={"standard"}
-                     onRegionChangeComplete={this._handleChangeRegion}
-                     region={{
-                       latitude: parseFloat(this.state.latitude),
-                       longitude: parseFloat(this.state.longitude),
-                       latitudeDelta: parseFloat(this.state.latitudeDelta),
-                       longitudeDelta: parseFloat(this.state.longitudeDelta),
-                     }}>
+            <MapView
+                style={styles.map}
+                showsUserLocation={true}
+                showsMyLocationButton={true}
+                mapType={"standard"}
+                onRegionChangeComplete={this._handleChangeRegion}
+                region={{
+                  latitude: parseFloat(this.state.latitude),
+                  longitude: parseFloat(this.state.longitude),
+                  latitudeDelta: parseFloat(this.state.latitudeDelta),
+                  longitudeDelta: parseFloat(this.state.longitudeDelta),
+                }}>
 
 
-              {this.state.points.map((point, index) => {
-                return (<InfoPointer onPress={() => this._showPoint(point)} key={point._id} pointData={point}/>)
+              {this.state.points
+                  .filter(point=>{
+                    const aqi = getAqi(point);
+                    return aqi>this.state.filterData[0] && aqi<this.state.filterData[1];
+                  })
+                  .map((point, index) => {
+              return (<InfoPointer onPress={() => this._showPoint(point)} key={point._id} pointData={point}/>)
               })}
 
             </MapView>
-            <Gradient/>
+            <Gradient currentFilter={this.state.filterData} onFilterChange={this._changeFilter}/>
           </View>
       );
     }
@@ -122,12 +132,6 @@ export default class Maps extends React.Component {
     // this.console.log(...region);
     console.log(...region);
   }
-
-  componentWillUnmount() {
-    this.state.callbacksToClear.forEach(callback => callback());
-  }
-
-
 }
 
 
