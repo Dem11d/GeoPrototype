@@ -141,15 +141,14 @@ export class InfoPointer extends React.Component {
       markerView = (
           <PointInfo point={this.props.pointData}/>
       )}else{
-      markerView = null;
-      //     (
-      //     <View>
-      //       {/*<Image source={require('GeoPrototype/assets/location/info-marker.png')} style={styles.infoPoint_image}/>*/}
-      //       <View style={[styles.infoPoint_view,{backgroundColor:this.state.color}]}>
-      //         <Text style={styles.infoPoint_text}>{this.state.maxValue}</Text>
-      //       </View>
-      //     </View>
-      // )
+      markerView =(
+          <View>
+            {/*<Image source={require('GeoPrototype/assets/location/info-marker.png')} style={styles.infoPoint_image}/>*/}
+            <View style={[styles.infoPoint_view,{backgroundColor:this.state.color}]}>
+              <Text style={styles.infoPoint_text}>{this.state.maxValue}</Text>
+            </View>
+          </View>
+      )
     }
     // console.log(this.props.pointData);
     if (this.props.pointData)
@@ -177,10 +176,10 @@ export class InfoPointer extends React.Component {
               longitude: this.props.pointData.geometry.coordinates[1],
             }}
         >
-          {/*{markerView}*/}
-          <MapView.Callout>
-            <PointInfo point={this.props.pointData}/>
-          </MapView.Callout>
+          {markerView}
+          {/*<MapView.Callout>*/}
+            {/*<PointInfo point={this.props.pointData}/>*/}
+          {/*</MapView.Callout>*/}
         </MapView.Marker>
       ]);
     else return null;
