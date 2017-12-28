@@ -176,10 +176,13 @@ export class InfoPointer extends React.Component {
               longitude: this.props.pointData.geometry.coordinates[1],
             }}
         >
-          {markerView}
-          {/*<MapView.Callout>*/}
-            {/*<PointInfo point={this.props.pointData}/>*/}
-          {/*</MapView.Callout>*/}
+          {/*{markerView}*/}
+          <View style={[styles.infoPoint_view,{backgroundColor:this.state.color}]}>
+          <Text style={styles.infoPoint_text}>{this.state.maxValue}</Text>
+        </View>
+          <MapView.Callout>
+            <PointInfo point={this.props.pointData}/>
+          </MapView.Callout>
         </MapView.Marker>
       ]);
     else return null;

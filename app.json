@@ -1,21 +1,32 @@
 {
   "expo": {
     "name": "GeoPrototype",
-    "description": "This project is really great.",
+    "description": "An empty new project",
     "slug": "GeoPrototype",
     "privacy": "public",
-    "sdkVersion": "24.0.0",
-    "platforms": ["ios", "android"],
+    "sdkVersion": "22.0.0",
     "version": "1.0.0",
     "orientation": "portrait",
+    "primaryColor": "#cccccc",
     "icon": "./assets/icon.png",
     "splash": {
       "image": "./assets/splash.png",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
+    "packagerOpts": {
+      "assetExts": ["ttf", "mp4"]
+    },
+    "android": {
+      "package": "com.example.mynewproject",
+      "config": {
+        "googleMaps": {
+          "apiKey": "AIzaSyD5jf0f929sHTG5w6KXFtcFLTN9Q_daf7c"
+        }
+      }
+    },
     "ios": {
-      "supportsTablet": true
+      "bundleIdentifier": "com.example.mynewproject"
     }
   }
 }

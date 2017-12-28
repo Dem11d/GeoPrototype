@@ -19,12 +19,6 @@ export default class Help extends React.Component {
           justifyContent: "center",
         }}>
           <Text>{"Help content"}</Text>
-          <Svg>
-
-          </Svg>
-
-
-
         </View>
     )
     return (
