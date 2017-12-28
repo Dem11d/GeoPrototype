@@ -89,7 +89,7 @@ export class InfoPointer extends React.Component {
       color: this.getColor(max),
       maxValue: max,
       detailView:false,
-      zIndex:-1
+      zIndex:0
     }
     // console.log(this.state.symbolWidth);
   }
@@ -126,7 +126,7 @@ export class InfoPointer extends React.Component {
     }
 
   handleClick(){
-    this.setState({detailView:!this.state.detailView,zIndex:!this.state.detailView?1:-1});
+    this.setState({detailView:!this.state.detailView,zIndex:!this.state.detailView?1:0});
   }
   render(){
     function random(max) {
