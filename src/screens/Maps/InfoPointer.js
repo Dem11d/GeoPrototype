@@ -58,11 +58,11 @@ const checkConcentration = (arr, value) => {
   return 0;
 }
 
-const getAqi = (point)=>getMaxValue(point);
+const getAqi = (point) => getMaxValue(point);
 
 export {getAqi};
 
-const getMaxValue = (point)=> {
+const getMaxValue = (point) => {
   if (point.properties) {
     const prop = point.properties;
     const no2Contentration = checkConcentration(no2, prop.no2);
@@ -70,8 +70,8 @@ const getMaxValue = (point)=> {
 
     const max = Math.max(no2Contentration, pm10Concentration);
     const result = Math.floor(max);
-    if(Number.isNaN(result)){
-      console.log("NaN",this.props.pointData);
+    if (Number.isNaN(result)) {
+      console.log("NaN", this.props.pointData);
       console.log(no2Contentration);
       console.log(pm10Concentration);
     }
@@ -88,47 +88,45 @@ export class InfoPointer extends React.Component {
       symbolWidth: new Animated.Value(30),
       color: this.getColor(max),
       maxValue: max,
-      detailView:false,
-      zIndex:0
+      detailView: false,
+      zIndex: 1
     }
     // console.log(this.state.symbolWidth);
   }
 
 
-  handleClick() {
-    console.log("handle click");
-    Animated.timing(this.state.symbolWidth, {
-      toValue: 500,
-      duration: 2000,
-      delay: 200,
-      easing: Easing.in(Easing.ease),
-      useNativeDriver: true
-    }).start();
-    // this.setState({symbolWidth : 100});
-  }
-
-
-
   getColor(max) {
-      if (max > aqi[5][0]) {
-        return "#A52A2A";
-      } else if (max > aqi[4][0]) {
-        return "#FF0000";
-      } else if (max > aqi[3][0]) {
-        return "#FF9A00";
-      } else if (max > aqi[2][0]) {
-        return "#608E03";
-      } else if (max > aqi[1][0]) {
-        return "#BBCF4C";
-      } else {
-        return "#79BC6A";
-      }
+    if (max > aqi[5][0]) {
+      return "#A52A2A";
+    } else if (max > aqi[4][0]) {
+      return "#FF0000";
+    } else if (max > aqi[3][0]) {
+      return "#FF9A00";
+    } else if (max > aqi[2][0]) {
+      return "#608E03";
+    } else if (max > aqi[1][0]) {
+      return "#BBCF4C";
+    } else {
+      return "#79BC6A";
     }
-
-  handleClick(){
-    this.setState({detailView:!this.state.detailView,zIndex:!this.state.detailView?1:0});
   }
-  render(){
+
+  handleClick() {
+    console.log("handleClick");
+    this.setState({detailView: !this.state.detailView, zIndex: !this.state.detailView ? 9999 : 1});
+    this.props.setActiveMarker(this.props.pointData);
+    // this.props.animateToCoordinate({
+    //   latitude: this.props.pointData.geometry.coordinates[0],
+    //   longitude: this.props.pointData.geometry.coordinates[1],
+    // });
+  }
+
+  onDeselect() {
+    console.log("handleDeselect");
+    this.setState({detailView: !this.state.detailView, zIndex: !this.state.detailView ? 9999 : 1});
+  }
+
+  render() {
     function random(max) {
       return Math.round(Math.random() * max);
     }
@@ -137,14 +135,15 @@ export class InfoPointer extends React.Component {
 
     const markerWidth = 50;
     let markerView;
-    if(this.state.detailView){
+    if (this.state.detailView) {
       markerView = (
           <PointInfo point={this.props.pointData}/>
-      )}else{
-      markerView =(
+      )
+    } else {
+      markerView = (
           <View>
             {/*<Image source={require('GeoPrototype/assets/location/info-marker.png')} style={styles.infoPoint_image}/>*/}
-            <View style={[styles.infoPoint_view,{backgroundColor:this.state.color}]}>
+            <View style={[styles.infoPoint_view, {backgroundColor: this.state.color}]}>
               <Text style={styles.infoPoint_text}>{this.state.maxValue}</Text>
             </View>
           </View>
@@ -167,9 +166,10 @@ export class InfoPointer extends React.Component {
         ,
         <MapView.Marker
             key={1}
-            zIndex = {this.state.zIndex}
+            zIndex={this.state.zIndex}
             // image = {require('ParkingWatcher/assets/location/info-marker.png')} style={{width:25}}
             onPress={() => this.handleClick()}
+            onDeselect={() => this.onDeselect()}
             // onPress={this.props.onPress}
             coordinate={{
               latitude: this.props.pointData.geometry.coordinates[0],
@@ -177,11 +177,14 @@ export class InfoPointer extends React.Component {
             }}
         >
           {/*{markerView}*/}
-          <View style={[styles.infoPoint_view,{backgroundColor:this.state.color}]}>
-          <Text style={styles.infoPoint_text}>{this.state.maxValue}</Text>
-        </View>
-          <MapView.Callout>
-            <PointInfo point={this.props.pointData}/>
+          <View style={[styles.infoPoint_view, {backgroundColor: this.state.color}]}>
+            <Text style={styles.infoPoint_text}>{this.state.maxValue}</Text>
+          </View>
+          <MapView.Callout style={{
+            width:230,
+
+          }}>
+          <PointInfo point={this.props.pointData}/>
           </MapView.Callout>
         </MapView.Marker>
       ]);
@@ -194,16 +197,14 @@ const styles = StyleSheet.create({
     width: 50,
     height: 50
   },
-  infoPoint_text: {
-
-  },
+  infoPoint_text: {},
   infoPoint_view: {
     // position: "absolute",
     // marginTop: 6,
     // marginLeft: 6,
     // marginBottom: 0,
     // marginRight: 5,
-    borderColor:"black",
+    borderColor: "black",
     // flex: 1,
     width: 38,
     height: 22,

@@ -8,7 +8,7 @@ const chartOptions = {
   width: 200,
   height: 100,
   margin: {
-    top: 0,
+    top: 20,
     left: 20,
     bottom: 30,
     right: 0
@@ -51,29 +51,6 @@ const chartOptions = {
 export class PointInfo extends React.Component {
 
   render() {
-    let data = [
-      [{
-        "v": 49,
-        "name": "apple"
-      }, {
-        "v": 42,
-        "name": "apple"
-      }],
-      [{
-        "v": 69,
-        "name": "banana"
-      }, {
-        "v": 62,
-        "name": "banana"
-      }],
-      [{
-        "v": 29,
-        "name": "grape"
-      }, {
-        "v": 15,
-        "name": "grape"
-      }]
-    ]
 
     const chartData = [Object.keys(this.props.point.properties)
         .filter(key=>Number.isFinite(this.props.point.properties[key]))
@@ -96,10 +73,10 @@ export class PointInfo extends React.Component {
                 onPress={() => console.log("pressed")}
           >
             <View style={{
-              width: 300,
+              // width: 300,
               backgroundColor: "white",
               borderRadius: 7,
-              padding: 15
+              padding: 3
             }}>
               <ScrollView>
                 {content}

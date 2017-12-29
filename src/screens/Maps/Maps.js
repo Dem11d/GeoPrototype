@@ -29,6 +29,7 @@ export default class Maps extends React.Component {
 
     this.state = {
       data: [],
+      activeMarker: null,
       filterData: [0, 500],
       points: [],
       latitude:49.05053875348836,
@@ -85,8 +86,48 @@ export default class Maps extends React.Component {
   _changeFilter = (filterData) => {
     this.setState({filterData: filterData})
   };
+  handleMapClick(){
+    console.log("handleMapClick");
+    if(this.state.activeMarker)
+      this.removeActiveMarker();
+  }
+
+  setActiveMarker(marker){
+    this.setState({activeMarker:marker});
+  }
+  removeActiveMarker(){
+    this.setState({activeMarker:null});
+  }
+  animateToCoordinate(coord){
+    this._map.animateToCoordinate(coord, 1);
+  }
 
   render() {
+
+    let markerContent;
+    if(this.state.activeMarker)
+      markerContent =  (<InfoPointer
+          setActiveMarker={(marker)=>this.setActiveMarker(marker)}
+          removeActiveMarker={()=>this.removeActiveMarker()}
+          key={this.state.activeMarker._id} pointData={this.state.activeMarker}
+          animateToCoordinate = {(coord)=>this.animateToCoordinate(coord)}
+          />
+  );
+
+    else{
+      markerContent = this.state.points
+          // .filter(point=>{
+          //   const aqi = getAqi(point);
+          //   return aqi>this.state.filterData[0] && aqi<this.state.filterData[1];
+          // })
+          .map((point, index) => {
+            return (<InfoPointer
+                setActiveMarker={(marker)=>this.setActiveMarker(marker)}
+                removeActiveMarker={()=>this.removeActiveMarker()}
+                animateToCoordinate = {(coord)=>this.animateToCoordinate(coord)}
+                key={point._id} pointData={point}/>)
+          });
+    }
     let content;
     if (this.state.ready) {
       content = (
@@ -97,23 +138,15 @@ export default class Maps extends React.Component {
                 showsMyLocationButton={true}
                 mapType={"standard"}
                 onRegionChangeComplete={this._handleChangeRegion}
-                region={{
+                onPress={()=>this.handleMapClick()}
+                ref={component => this._map = component}
+                initialRegion={{
                   latitude: parseFloat(this.state.latitude),
                   longitude: parseFloat(this.state.longitude),
                   latitudeDelta: parseFloat(this.state.latitudeDelta),
                   longitudeDelta: parseFloat(this.state.longitudeDelta),
                 }}>
-
-
-              {this.state.points
-                  .filter(point=>{
-                    const aqi = getAqi(point);
-                    return aqi>this.state.filterData[0] && aqi<this.state.filterData[1];
-                  })
-                  .map((point, index) => {
-              return (<InfoPointer onPress={() => this._showPoint(point)} key={point._id} pointData={point}/>)
-              })}
-
+              {markerContent}
             </MapView>
             <Gradient currentFilter={this.state.filterData} onFilterChange={this._changeFilter}/>
           </View>
@@ -124,7 +157,7 @@ export default class Maps extends React.Component {
           <View style={{alignItems: 'center', justifyContent: 'center', flex: 1}}>
             <Spinner color='blue'/>
           </View>);
-    return (<Template title={"Map"} content={content} {...this.props}/>)
+    return (<Template title={"AQI category"} content={content} {...this.props}/>)
   }
 
   onRegionChange(region) {

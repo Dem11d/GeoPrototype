@@ -11,8 +11,7 @@ import Help from "../screens/Help";
 import {SideBar} from "./sidebar";
 
 export default DrawerNavigator({
-      Maps: {screen: Maps},
-      Help: {screen: Help},
+      "AQI category": {screen: Maps},
     }
 );
 
