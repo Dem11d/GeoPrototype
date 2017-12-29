@@ -15,12 +15,15 @@ import {InfoPointer} from "./InfoPointer";
 import Gradient from "./Gradient";
 import {getAqi} from "./InfoPointer";
 
-let dataPoints = (require('GeoPrototype/assets/testdata.json').docs.map(point => {
-  point.geometry.coordinates[0] = 180 * Math.random() - 90;
-  point.geometry.coordinates[1] = 360 * Math.random() - 180;
-  point.properties.no2 = 400 * Math.random();
-  return point;
-}));
+let dataPoints = (require('GeoPrototype/assets/changedData.json'));
+//     .docs.map(point => {
+//   point.geometry.coordinates[0] = 180 * Math.random() - 90;
+//   point.geometry.coordinates[1] = 360 * Math.random() - 180;
+//   point.properties.no2 = 400 * Math.random();
+//   point.properties.pm10 = 430 * Math.random();
+//   return point;
+// }));
+// console.log(JSON.stringify(dataPoints));
 
 export default class Maps extends React.Component {
   constructor(props) {
@@ -116,10 +119,10 @@ export default class Maps extends React.Component {
 
     else{
       markerContent = this.state.points
-          // .filter(point=>{
-          //   const aqi = getAqi(point);
-          //   return aqi>this.state.filterData[0] && aqi<this.state.filterData[1];
-          // })
+          .filter(point=>{
+            const aqi = getAqi(point);
+            return aqi>this.state.filterData[0] && aqi<this.state.filterData[1];
+          })
           .map((point, index) => {
             return (<InfoPointer
                 setActiveMarker={(marker)=>this.setActiveMarker(marker)}

@@ -1,0 +1,2965 @@
+[{
+    "_id": "dd60c1fb02c71302e72989504405dd93",
+    "_rev": "1-a13e276cfb6522386802d1e29c6ce3da",
+    "geometry": {"type": "Point", "coordinates": [-27.55980617366731, 59.64927856810391]},
+    "type": "Feature",
+    "properties": {
+        "date": "2017-11-03T11:00:00+01",
+        "no2": 148.1503806076944,
+        "name": "Dresden-Bergstraße",
+        "pm10": 378.11091921292245,
+        "no": 95,
+        "predictedpm10": 31.017853963992835
+    }
+}, {
+    "_id": "dd60c1fb02c71302e72989504405e9a5",
+    "_rev": "1-16eb76c08423e47a2b4d2d7df452b259",
+    "geometry": {"type": "Point", "coordinates": [-14.093394228257239, 170.55200985632837]},
+    "type": "Feature",
+    "properties": {
+        "date": "2017-11-03T11:00:00+01",
+        "no2": 96.65920305997133,
+        "name": "Dresden-Nord",
+        "pm10": 34.92933476343751,
+        "no": 40,
+        "predictedpm10": 33.98010219522713
+    }
+}, {
+    "_id": "dd60c1fb02c71302e72989504405f2e5",
+    "_rev": "1-3f616b9e6979bbd07e1274fb40127238",
+    "geometry": {"type": "Point", "coordinates": [-76.64900023955852, 15.649443631991744]},
+    "type": "Feature",
+    "properties": {
+        "date": "2017-11-03T11:00:00+01",
+        "no2": 12.220812030136585,
+        "name": "Dresden-Winckelmannstr",
+        "pm10": 182.6069823326543,
+        "no": 15,
+        "predictedpm10": 32.48131757719247
+    }
+}, {
+    "_id": "dd60c1fb02c71302e729895044060225",
+    "_rev": "1-1e78d554f5628933a3e6005591825aa5",
+    "geometry": {"type": "Point", "coordinates": [16.96948152501136, 30.76154817827046]},
+    "type": "Feature",
+    "properties": {
+        "date": "2017-11-03T12:00:00+01",
+        "no2": 296.06890296563506,
+        "name": "Dresden-Bergstraße",
+        "pm10": 189.3979724822566,
+        "no": 95,
+        "predictedpm10": 34.1800652081498
+    }
+}, {
+    "_id": "dd60c1fb02c71302e729895044060a32",
+    "_rev": "1-e79edc1808ff91bf57890ccaa5624307",
+    "geometry": {"type": "Point", "coordinates": [83.6464031925425, 51.32250124588609]},
+    "type": "Feature",
+    "properties": {
+        "date": "2017-11-03T12:00:00+01",
+        "no2": 214.13958929479122,
+        "name": "Dresden-Nord",
+        "pm10": 311.6552119003609,
+        "no": 40,
+        "predictedpm10": 33.994309779633554
+    }
+}, {
+    "_id": "dd60c1fb02c71302e7298950440615dc",
+    "_rev": "1-9d3e09df5f23b3a078232831f33a05dc",
+    "geometry": {"type": "Point", "coordinates": [85.07948802318424, -76.25478294678032]},
+    "type": "Feature",
+    "properties": {
+        "date": "2017-11-03T12:00:00+01",
+        "no2": 128.1969990581274,
+        "name": "Dresden-Winckelmannstr",
+        "pm10": 84.67084854608402,
+        "no": 15,
+        "predictedpm10": 30.971220236648982
+    }
+}, {
+    "_id": "dd60c1fb02c71302e729895044061f8a",
+    "_rev": "1-55e94c83a52b9e4ef85e204a9ec29982",
+    "geometry": {"type": "Point", "coordinates": [-49.959980179555714, 160.65460436046124]},
+    "type": "Feature",
+    "properties": {
+        "date": "2017-11-03T13:00:00+01",
+        "no2": 17.762940749526024,
+        "name": "Dresden-Bergstraße",
+        "pm10": 39.05049415305257,
+        "no": 95,
+        "predictedpm10": 30.54377794421632
+    }
+}, {
+    "_id": "dd60c1fb02c71302e72989504406287f",
+    "_rev": "1-d3d180689974fd82625a270a6fbff561",
+    "geometry": {"type": "Point", "coordinates": [10.79781245905906, 116.98349995538592]},
+    "type": "Feature",
+    "properties": {
+        "date": "2017-11-03T13:00:00+01",
+        "no2": 193.05210867896676,
+        "name": "Dresden-Nord",
+        "pm10": 183.3875768375583,
+        "no": 40,
+        "predictedpm10": 33.51925863790786
+    }
+}, {
+    "_id": "dd60c1fb02c71302e7298950440631fe",
+    "_rev": "1-11977a2c84eecfd6b2f34d7fbfdf20de",
+    "geometry": {"type": "Point", "coordinates": [-59.73846369422972, -89.0193609148264]},
+    "type": "Feature",
+    "properties": {
+        "date": "2017-11-03T13:00:00+01",
+        "no2": 54.486843291670084,
+        "name": "Dresden-Winckelmannstr",
+        "pm10": 377.0841505867429,
+        "no": 15,
+        "predictedpm10": 29.21468000928953
+    }
+}, {
+    "_id": "dd60c1fb02c71302e729895044063c3f",
+    "_rev": "1-69ee1627747977cb6082b6d264cada8d",
+    "geometry": {"type": "Point", "coordinates": [47.1231225784868, -37.216760348528624]},
+    "type": "Feature",
+    "properties": {
+        "date": "2017-11-03T14:00:00+01",
+        "no2": 273.372960742563,
+        "name": "Dresden-Bergstraße",
+        "pm10": 385.8041320205666,
+        "no": 95,
+        "predictedpm10": 32.37628224456992
+    }
+}, {
+    "_id": "dd60c1fb02c71302e7298950440647fd",
+    "_rev": "1-33295b95ca88a995002f646a5a1cb7fe",
+    "geometry": {"type": "Point", "coordinates": [1.286748913116753, -47.99601623788476]},
+    "type": "Feature",
+    "properties": {
+        "date": "2017-11-03T14:00:00+01",
+        "no2": 333.7038775905967,
+        "name": "Dresden-Nord",
+        "pm10": 51.57529152929783,
+        "no": 40,
+        "predictedpm10": 29.2846601650962
+    }
+}, {
+    "_id": "dd60c1fb02c71302e72989504406571f",
+    "_rev": "1-fd94a808be10a72606d79d78d5072399",
+    "geometry": {"type": "Point", "coordinates": [45.13841145671904, -57.08815259858966]},
+    "type": "Feature",
+    "properties": {
+        "date": "2017-11-03T14:00:00+01",
+        "no2": 283.09587771072984,
+        "name": "Dresden-Winckelmannstr",
+        "pm10": 182.79870782746002,
+        "no": 15,
+        "predictedpm10": 30.828160400306288
+    }
+}, {
+    "_id": "dd60c1fb02c71302e7298950440657d2",
+    "_rev": "1-aa6d469ff2a9a453df5f77220ca6b9ca",
+    "geometry": {"type": "Point", "coordinates": [26.125939898192883, -96.77005615085363]},
+    "type": "Feature",
+    "properties": {
+        "date": "2017-11-03T15:00:00+01",
+        "no2": 338.73708387836814,
+        "name": "Dresden-Bergstraße",
+        "pm10": 356.3101625884883,
+        "no": 95,
+        "predictedpm10": 30.713593156105695
+    }
+}, {
+    "_id": "dd60c1fb02c71302e729895044065f2a",
+    "_rev": "1-380c97bb8b62e63ba53cdf43b1c4c462",
+    "geometry": {"type": "Point", "coordinates": [82.21055153757334, 136.2690572720021]},
+    "type": "Feature",
+    "properties": {
+        "date": "2017-11-03T15:00:00+01",
+        "no2": 333.40436685830355,
+        "name": "Dresden-Nord",
+        "pm10": 263.8742995983921,
+        "no": 40,
+        "predictedpm10": 31.5424083926358
+    }
+}, {
+    "_id": "dd60c1fb02c71302e729895044066344",
+    "_rev": "1-d5845eb3f4f4062d0679d4cff52f03a3",
+    "geometry": {"type": "Point", "coordinates": [-62.323857536539435, 174.80177499353886]},
+    "type": "Feature",
+    "properties": {
+        "date": "2017-11-03T15:00:00+01",
+        "no2": 34.876805637031794,
+        "name": "Dresden-Winckelmannstr",
+        "pm10": 300.22139470325783,
+        "no": 15,
+        "predictedpm10": 31.450241763543612
+    }
+}, {
+    "_id": "dd60c1fb02c71302e72989504406715e",
+    "_rev": "1-440cbf048357d6f3157755d3e241a7e1",
+    "geometry": {"type": "Point", "coordinates": [38.49520828574896, 25.929771764203906]},
+    "type": "Feature",
+    "properties": {
+        "date": "2017-11-03T16:00:00+01",
+        "no2": 334.93408178910613,
+        "name": "Dresden-Bergstraße",
+        "pm10": 388.6079413886182,
+        "no": 95,
+        "predictedpm10": 30.038226472558616
+    }
+}, {
+    "_id": "dd60c1fb02c71302e729895044067ba5",
+    "_rev": "1-02af93bf2819dcda4301253e01cb70a0",
+    "geometry": {"type": "Point", "coordinates": [31.094046542420983, 135.7622463349253]},
+    "type": "Feature",
+    "properties": {
+        "date": "2017-11-03T16:00:00+01",
+        "no2": 208.03668089210987,
+        "name": "Dresden-Nord",
+        "pm10": 3.1238419329747558,
+        "no": 40,
+        "predictedpm10": 29.162541369646714
+    }
+}, {
+    "_id": "dd60c1fb02c71302e729895044067e57",
+    "_rev": "1-77c7cde289476b61a74788262c4edadb",
+    "geometry": {"type": "Point", "coordinates": [-20.287099946290255, -48.83552125655115]},
+    "type": "Feature",
+    "properties": {
+        "date": "2017-11-03T16:00:00+01",
+        "no2": 320.4132469370961,
+        "name": "Dresden-Winckelmannstr",
+        "pm10": 147.82857151003554,
+        "no": 15,
+        "predictedpm10": 29.106493887442873
+    }
+}, {
+    "_id": "dd60c1fb02c71302e7298950440680ac",
+    "_rev": "1-610d083486c29be3ca5cc8298b7a2fce",
+    "geometry": {"type": "Point", "coordinates": [23.514701798558235, -88.74662392772734]},
+    "type": "Feature",
+    "properties": {
+        "date": "2017-11-03T17:00:00+01",
+        "no2": 94.18312469497323,
+        "name": "Dresden-Bergstraße",
+        "pm10": 113.48328481428325,
+        "no": 95,
+        "predictedpm10": 34.55485999462858
+    }
+}, {
+    "_id": "dd60c1fb02c71302e729895044068e68",
+    "_rev": "1-f64aaf2923a9b0ab3c5bbd1cacca7b9d",
+    "geometry": {"type": "Point", "coordinates": [-4.870115700177848, 137.74053406901658]},
+    "type": "Feature",
+    "properties": {
+        "date": "2017-11-03T17:00:00+01",
+        "no2": 327.69902143627405,
+        "name": "Dresden-Nord",
+        "pm10": 407.28059929795563,
+        "no": 40,
+        "predictedpm10": 30.805749976416365
+    }
+}, {
+    "_id": "dd60c1fb02c71302e72989504406925f",
+    "_rev": "1-6dde73e4999d92c12ee3e227782a60ff",
+    "geometry": {"type": "Point", "coordinates": [-83.04336943197995, 20.587034532800317]},
+    "type": "Feature",
+    "properties": {
+        "date": "2017-11-03T17:00:00+01",
+        "no2": 15.100275073200464,
+        "name": "Dresden-Winckelmannstr",
+        "pm10": 150.19777902169153,
+        "no": 15,
+        "predictedpm10": 31.175205142650665
+    }
+}, {
+    "_id": "dd60c1fb02c71302e729895044069676",
+    "_rev": "1-6ade4048a0dbb145c0862c138a2d0fe7",
+    "geometry": {"type": "Point", "coordinates": [-52.51632670406252, -83.97599374875426]},
+    "type": "Feature",
+    "properties": {
+        "date": "2017-11-03T18:00:00+01",
+        "no2": 312.5508558936417,
+        "name": "Dresden-Bergstraße",
+        "pm10": 110.99177576135844,
+        "no": 95,
+        "predictedpm10": 32.54884060436133
+    }
+}, {
+    "_id": "dd60c1fb02c71302e72989504406a043",
+    "_rev": "1-ba76e59125a3dfb4ebe231a25d8b2af0",
+    "geometry": {"type": "Point", "coordinates": [-24.640040695667267, -42.452408373355865]},
+    "type": "Feature",
+    "properties": {
+        "date": "2017-11-03T18:00:00+01",
+        "no2": 281.6379929892719,
+        "name": "Dresden-Nord",
+        "pm10": 86.88747577834874,
+        "no": 40,
+        "predictedpm10": 33.29346151227135
+    }
+}, {
+    "_id": "dd60c1fb02c71302e72989504406ac2c",
+    "_rev": "1-50b96fe3014aa35bcf37a80d665cf9a4",
+    "geometry": {"type": "Point", "coordinates": [-36.91566348541528, 17.05038051120937]},
+    "type": "Feature",
+    "properties": {
+        "date": "2017-11-03T18:00:00+01",
+        "no2": 241.8707674369216,
+        "name": "Dresden-Winckelmannstr",
+        "pm10": 167.2028544987552,
+        "no": 15,
+        "predictedpm10": 31.60423547167884
+    }
+}, {
+    "_id": "dd60c1fb02c71302e72989504406b38c",
+    "_rev": "1-8603e7f3930a6676c5ff44beeb417f88",
+    "geometry": {"type": "Point", "coordinates": [79.47873678524047, 157.56153792142868]},
+    "type": "Feature",
+    "properties": {
+        "date": "2017-11-03T19:00:00+01",
+        "no2": 301.2048425152898,
+        "name": "Dresden-Bergstraße",
+        "pm10": 303.0564239108935,
+        "no": 95,
+        "predictedpm10": 34.566274070445424
+    }
+}, {
+    "_id": "dd60c1fb02c71302e72989504406b89e",
+    "_rev": "1-b7565f8ef7c0f61159c7b3630a8f89fc",
+    "geometry": {"type": "Point", "coordinates": [22.733975923620164, 116.09965718351305]},
+    "type": "Feature",
+    "properties": {
+        "date": "2017-11-03T19:00:00+01",
+        "no2": 301.823677867651,
+        "name": "Dresden-Nord",
+        "pm10": 1.2500209198333323,
+        "no": 40,
+        "predictedpm10": 33.54223200680025
+    }
+}, {
+    "_id": "dd60c1fb02c71302e72989504406bef1",
+    "_rev": "1-897842b1203e6bfaf6ec934315032876",
+    "geometry": {"type": "Point", "coordinates": [41.262665363028646, -100.20474809221923]},
+    "type": "Feature",
+    "properties": {
+        "date": "2017-11-03T19:00:00+01",
+        "no2": 179.04697889462113,
+        "name": "Dresden-Winckelmannstr",
+        "pm10": 288.08175971964374,
+        "no": 15,
+        "predictedpm10": 30.800693046359584
+    }
+}, {
+    "_id": "dd60c1fb02c71302e72989504406cabe",
+    "_rev": "1-99fcf6c09a6fc6c79edb22ecc56e99bb",
+    "geometry": {"type": "Point", "coordinates": [22.123450082726777, 110.9386101923883]},
+    "type": "Feature",
+    "properties": {
+        "date": "2017-11-03T20:00:00+01",
+        "no2": 188.65173691883683,
+        "name": "Dresden-Bergstraße",
+        "pm10": 381.0532804415561,
+        "no": 95,
+        "predictedpm10": 31.543076498397898
+    }
+}, {
+    "_id": "dd60c1fb02c71302e72989504406ccd7",
+    "_rev": "1-da177f236c3f4933c9a6ac2e1ed87340",
+    "geometry": {"type": "Point", "coordinates": [-65.44955623336136, 90.69948742166162]},
+    "type": "Feature",
+    "properties": {
+        "date": "2017-11-03T20:00:00+01",
+        "no2": 119.16071260347962,
+        "name": "Dresden-Nord",
+        "pm10": 236.1347222002223,
+        "no": 40,
+        "predictedpm10": 29.303833221306018
+    }
+}, {
+    "_id": "dd60c1fb02c71302e72989504406d2ab",
+    "_rev": "1-dbf64d808c9eef47ad4494bfa9fef526",
+    "geometry": {"type": "Point", "coordinates": [78.37511292658746, -89.8714499361813]},
+    "type": "Feature",
+    "properties": {
+        "date": "2017-11-03T20:00:00+01",
+        "no2": 157.898673042655,
+        "name": "Dresden-Winckelmannstr",
+        "pm10": 217.69262814195827,
+        "no": 15,
+        "predictedpm10": 30.330040245145977
+    }
+}, {
+    "_id": "dd60c1fb02c71302e72989504406d5a7",
+    "_rev": "1-d66175bda4587ccb420489ccca66a9ee",
+    "geometry": {"type": "Point", "coordinates": [-40.408059088513255, -164.12190726958215]},
+    "type": "Feature",
+    "properties": {
+        "date": "2017-11-03T21:00:00+01",
+        "no2": 292.84549402073026,
+        "name": "Dresden-Bergstraße",
+        "pm10": 323.105602695141,
+        "no": 95,
+        "predictedpm10": 31.165893863764364
+    }
+}, {
+    "_id": "dd60c1fb02c71302e72989504406d6fa",
+    "_rev": "1-0611ce441a3ed49f00013a50b2063972",
+    "geometry": {"type": "Point", "coordinates": [89.38097059261054, -67.71158739924431]},
+    "type": "Feature",
+    "properties": {
+        "date": "2017-11-03T21:00:00+01",
+        "no2": 194.89305866882205,
+        "name": "Dresden-Nord",
+        "pm10": 331.74965055659413,
+        "no": 40,
+        "predictedpm10": 30.4662322407489
+    }
+}, {
+    "_id": "dd60c1fb02c71302e72989504406e4f2",
+    "_rev": "1-6b66e1d02a428b4e8ef4657d9031ee40",
+    "geometry": {"type": "Point", "coordinates": [89.47471576742828, -175.95854041166604]},
+    "type": "Feature",
+    "properties": {
+        "date": "2017-11-03T21:00:00+01",
+        "no2": 399.1422404535115,
+        "name": "Dresden-Winckelmannstr",
+        "pm10": 316.10876271966845,
+        "no": 15,
+        "predictedpm10": 32.93798508237403
+    }
+}, {
+    "_id": "dd60c1fb02c71302e72989504406ed3d",
+    "_rev": "1-c021dd12ceaa5e7d4eed54c6862a5b91",
+    "geometry": {"type": "Point", "coordinates": [75.88413183577359, -1.2891086284071207]},
+    "type": "Feature",
+    "properties": {
+        "date": "2017-11-03T22:00:00+01",
+        "no2": 299.40933054313064,
+        "name": "Dresden-Bergstraße",
+        "pm10": 170.63723238185048,
+        "no": 95,
+        "predictedpm10": 31.69306655693897
+    }
+}, {
+    "_id": "dd60c1fb02c71302e72989504406edee",
+    "_rev": "1-8a9bcc8ac1779545eed0bbb384d288ab",
+    "geometry": {"type": "Point", "coordinates": [-41.31394580472261, 140.68529522046447]},
+    "type": "Feature",
+    "properties": {
+        "date": "2017-11-03T22:00:00+01",
+        "no2": 282.65120312571526,
+        "name": "Dresden-Nord",
+        "pm10": 4.284266589675099,
+        "no": 40,
+        "predictedpm10": 31.55681764825743
+    }
+}, {
+    "_id": "dd60c1fb02c71302e72989504406f1be",
+    "_rev": "1-6bf1e6245a68271a99b9ac518f7f64a7",
+    "geometry": {"type": "Point", "coordinates": [-16.401963061653078, -150.05756517872214]},
+    "type": "Feature",
+    "properties": {
+        "date": "2017-11-03T22:00:00+01",
+        "no2": 317.10438299924135,
+        "name": "Dresden-Winckelmannstr",
+        "pm10": 48.90432343818247,
+        "no": 15,
+        "predictedpm10": 32.819407399260854
+    }
+}, {
+    "_id": "dd60c1fb02c71302e72989504406f1e3",
+    "_rev": "1-794970178c1ff04d522e88121c3fc9bb",
+    "geometry": {"type": "Point", "coordinates": [-32.55175250116736, -24.083445025607944]},
+    "type": "Feature",
+    "properties": {
+        "date": "2017-11-03T23:00:00+01",
+        "no2": 136.09374510124326,
+        "name": "Dresden-Bergstraße",
+        "pm10": 230.92491726391017,
+        "no": 95,
+        "predictedpm10": 30.43482816383462
+    }
+}, {
+    "_id": "dd60c1fb02c71302e72989504406f8d5",
+    "_rev": "1-3a78abe83548c97ce99b5cd97bfdff65",
+    "geometry": {"type": "Point", "coordinates": [14.472860964015126, -13.26676519587636]},
+    "type": "Feature",
+    "properties": {
+        "date": "2017-11-03T23:00:00+01",
+        "no2": 151.0107479058206,
+        "name": "Dresden-Nord",
+        "pm10": 213.66226181620732,
+        "no": 40,
+        "predictedpm10": 33.255873358206685
+    }
+}, {
+    "_id": "dd60c1fb02c71302e7298950440702bd",
+    "_rev": "1-26fc23288410743e16d8ef2f9837be3d",
+    "geometry": {"type": "Point", "coordinates": [1.6379293659701943, -88.62277602776885]},
+    "type": "Feature",
+    "properties": {
+        "date": "2017-11-03T23:00:00+01",
+        "no2": 348.6949259415269,
+        "name": "Dresden-Winckelmannstr",
+        "pm10": 87.79628965072334,
+        "no": 15,
+        "predictedpm10": 28.383240488508786
+    }
+}, {
+    "_id": "dd60c1fb02c71302e729895044070592",
+    "_rev": "1-1b41d6883149aa06f86e06bcdf799de4",
+    "geometry": {"type": "Point", "coordinates": [-53.472450440749526, 75.43514261953533]},
+    "type": "Feature",
+    "properties": {
+        "date": "2017-11-04T00:00:00+01",
+        "no2": 277.11550211533904,
+        "name": "Dresden-Bergstraße",
+        "pm10": 189.55005067400634,
+        "no": 25,
+        "predictedpm10": 28.03335639573571
+    }
+}, {
+    "_id": "dd60c1fb02c71302e729895044070865",
+    "_rev": "1-1ae2e03e308a650031aebf0f89b26abc",
+    "geometry": {"type": "Point", "coordinates": [-5.627389554865658, 135.5344184115529]},
+    "type": "Feature",
+    "properties": {
+        "date": "2017-11-04T00:00:00+01",
+        "no2": 364.35536835342646,
+        "name": "Dresden-Nord",
+        "pm10": 222.49299076851457,
+        "no": 9,
+        "predictedpm10": 31.576412536792773
+    }
+}, {
+    "_id": "dd60c1fb02c71302e7298950440717ed",
+    "_rev": "1-a6c747716f89e0c1f9f77165a87c95a0",
+    "geometry": {"type": "Point", "coordinates": [-80.49789859447628, 76.9029479753226]},
+    "type": "Feature",
+    "properties": {
+        "date": "2017-11-04T00:00:00+01",
+        "no2": 228.8584576919675,
+        "name": "Dresden-Winckelmannstr",
+        "pm10": 240.60997191583738,
+        "no": 2,
+        "predictedpm10": 35.224927424741864
+    }
+}, {
+    "_id": "dd60c1fb02c71302e7298950440720e4",
+    "_rev": "1-a86d24c4f1da4d92d84a54e6be6a8212",
+    "geometry": {"type": "Point", "coordinates": [-63.47520451527089, -7.172125317156315]},
+    "type": "Feature",
+    "properties": {
+        "date": "2017-11-04T01:00:00+01",
+        "no2": 372.5100194104016,
+        "name": "Dresden-Bergstraße",
+        "pm10": 236.3735927734524,
+        "no": 25,
+        "predictedpm10": 28.066551555282643
+    }
+}, {
+    "_id": "dd60c1fb02c71302e729895044073037",
+    "_rev": "1-7080e623cd406a50246be12c33b93f60",
+    "geometry": {"type": "Point", "coordinates": [16.59398936200887, -58.620757441967726]},
+    "type": "Feature",
+    "properties": {
+        "date": "2017-11-04T01:00:00+01",
+        "no2": 161.58190025016665,
+        "name": "Dresden-Nord",
+        "pm10": 416.9576455769129,
+        "no": 9,
+        "predictedpm10": 30.537207536940677
+    }
+}, {
+    "_id": "dd60c1fb02c71302e729895044073ee2",
+    "_rev": "1-84bbd414cfaa9376dc036cc210ee6dce",
+    "geometry": {"type": "Point", "coordinates": [15.24082061368972, 165.21043519489467]},
+    "type": "Feature",
+    "properties": {
+        "date": "2017-11-04T01:00:00+01",
+        "no2": 218.51597912609577,
+        "name": "Dresden-Winckelmannstr",
+        "pm10": 46.74191996920854,
+        "no": 2,
+        "predictedpm10": 31.637011526594357
+    }
+}, {
+    "_id": "dd60c1fb02c71302e729895044073fd8",
+    "_rev": "1-5ec9fb314602ff9f1e28983d1a161cb5",
+    "geometry": {"type": "Point", "coordinates": [-6.6978994477540255, -39.094340186566114]},
+    "type": "Feature",
+    "properties": {
+        "date": "2017-11-04T02:00:00+01",
+        "no2": 202.45430748909712,
+        "name": "Dresden-Bergstraße",
+        "pm10": 14.384569546673447,
+        "no": 25,
+        "predictedpm10": 29.181693352004455
+    }
+}, {
+    "_id": "dd60c1fb02c71302e729895044074190",
+    "_rev": "1-3110eb2f6cbef2a6e75537257c137207",
+    "geometry": {"type": "Point", "coordinates": [-36.83383008465171, -14.30592748336494]},
+    "type": "Feature",
+    "properties": {
+        "date": "2017-11-04T02:00:00+01",
+        "no2": 157.66928493976593,
+        "name": "Dresden-Nord",
+        "pm10": 274.6026952727698,
+        "no": 9,
+        "predictedpm10": 32.91175065625625
+    }
+}, {
+    "_id": "dd60c1fb02c71302e7298950440746de",
+    "_rev": "1-cfca473d52d6a4d71cd5172d6a143851",
+    "geometry": {"type": "Point", "coordinates": [44.421171164140105, 87.55893607623875]},
+    "type": "Feature",
+    "properties": {
+        "date": "2017-11-04T02:00:00+01",
+        "no2": 339.78413194417953,
+        "name": "Dresden-Winckelmannstr",
+        "pm10": 134.68712400877848,
+        "no": 2,
+        "predictedpm10": 32.76812208425469
+    }
+}, {
+    "_id": "dd60c1fb02c71302e729895044074b1d",
+    "_rev": "1-c8b645a708ee3941c4de70cd370955e0",
+    "geometry": {"type": "Point", "coordinates": [83.67628316860646, 167.07931771874428]},
+    "type": "Feature",
+    "properties": {
+        "date": "2017-11-04T03:00:00+01",
+        "no2": 73.93019031733274,
+        "name": "Dresden-Bergstraße",
+        "pm10": 99.09280635183677,
+        "no": 25,
+        "predictedpm10": 32.23622552314046
+    }
+}, {
+    "_id": "dd60c1fb02c71302e729895044075438",
+    "_rev": "1-bffca39fb2c6d3921787930a6009507d",
+    "geometry": {"type": "Point", "coordinates": [-17.280459813773632, 6.877038907259703]},
+    "type": "Feature",
+    "properties": {
+        "date": "2017-11-04T03:00:00+01",
+        "no2": 235.33916352316737,
+        "name": "Dresden-Nord",
+        "pm10": 93.96412245929241,
+        "no": 9,
+        "predictedpm10": 32.04700956972781
+    }
+}, {
+    "_id": "dd60c1fb02c71302e729895044075fe8",
+    "_rev": "1-ac8d0223e5911f439167e6968cbe7b14",
+    "geometry": {"type": "Point", "coordinates": [-4.5300946198403835, 31.03386146016419]},
+    "type": "Feature",
+    "properties": {
+        "date": "2017-11-04T03:00:00+01",
+        "no2": 28.638888616114855,
+        "name": "Dresden-Winckelmannstr",
+        "pm10": 342.55045868223533,
+        "no": 2,
+        "predictedpm10": 31.752197059093643
+    }
+}, {
+    "_id": "dd60c1fb02c71302e729895044076f0e",
+    "_rev": "1-0617d7ae57f27bd8eb9c9c6c3b1d86e9",
+    "geometry": {"type": "Point", "coordinates": [-40.648101582191885, -126.07672152109444]},
+    "type": "Feature",
+    "properties": {
+        "date": "2017-11-04T04:00:00+01",
+        "no2": 101.99427586048841,
+        "name": "Dresden-Bergstraße",
+        "pm10": 352.1083601145074,
+        "no": 25,
+        "predictedpm10": 28.40069062868067
+    }
+}, {
+    "_id": "dd60c1fb02c71302e729895044077ce5",
+    "_rev": "1-ad7fe74df3091120b0cae01b8f9df391",
+    "geometry": {"type": "Point", "coordinates": [-2.686863401904702, -135.53200199268758]},
+    "type": "Feature",
+    "properties": {
+        "date": "2017-11-04T04:00:00+01",
+        "no2": 262.45692409574986,
+        "name": "Dresden-Nord",
+        "pm10": 44.17983281193301,
+        "no": 9,
+        "predictedpm10": 30.590903712530945
+    }
+}, {
+    "_id": "dd60c1fb02c71302e729895044077e12",
+    "_rev": "1-870464247d44bd558a4f142e2e2a2493",
+    "geometry": {"type": "Point", "coordinates": [32.495585451833904, -98.93660344183445]},
+    "type": "Feature",
+    "properties": {
+        "date": "2017-11-04T04:00:00+01",
+        "no2": 123.89420550316572,
+        "name": "Dresden-Winckelmannstr",
+        "pm10": 131.19762050686404,
+        "no": 2,
+        "predictedpm10": 35.45151460241292
+    }
+}, {
+    "_id": "dd60c1fb02c71302e72989504407861b",
+    "_rev": "1-99ae7bc3b52b59a6c502d27c0cb00bbb",
+    "geometry": {"type": "Point", "coordinates": [3.8520016288384795, 99.35572785325348]},
+    "type": "Feature",
+    "properties": {
+        "date": "2017-11-04T05:00:00+01",
+        "no2": 95.70661103352904,
+        "name": "Dresden-Bergstraße",
+        "pm10": 383.30078731523827,
+        "no": 25,
+        "predictedpm10": 32.058743459811055
+    }
+}, {
+    "_id": "dd60c1fb02c71302e7298950440790c4",
+    "_rev": "1-4268d329b258d79a693d50ba8a13f88c",
+    "geometry": {"type": "Point", "coordinates": [57.101064920425415, 141.177900088951]},
+    "type": "Feature",
+    "properties": {
+        "date": "2017-11-04T05:00:00+01",
+        "no2": 229.37243478372693,
+        "name": "Dresden-Nord",
+        "pm10": 375.89858250226825,
+        "no": 9,
+        "predictedpm10": 29.63267104026148
+    }
+}, {
+    "_id": "dd60c1fb02c71302e729895044079d93",
+    "_rev": "1-f61ca836b08a32ef62cb49c049557f69",
+    "geometry": {"type": "Point", "coordinates": [55.68470441736281, -50.33771026879549]},
+    "type": "Feature",
+    "properties": {
+        "date": "2017-11-04T05:00:00+01",
+        "no2": 335.07171515375376,
+        "name": "Dresden-Winckelmannstr",
+        "pm10": 226.0411707451567,
+        "no": 2,
+        "predictedpm10": 35.01962248803457
+    }
+}, {
+    "_id": "dd60c1fb02c71302e72989504407a578",
+    "_rev": "1-174d91612c13caf2aba8560b827b5e86",
+    "geometry": {"type": "Point", "coordinates": [32.16039435938001, 116.08504484407604]},
+    "type": "Feature",
+    "properties": {
+        "date": "2017-11-04T06:00:00+01",
+        "no2": 16.067009139806032,
+        "name": "Dresden-Bergstraße",
+        "pm10": 370.489559401758,
+        "no": 25,
+        "predictedpm10": 32.12648631181052
+    }
+}, {
+    "_id": "dd60c1fb02c71302e72989504407ac50",
+    "_rev": "1-55221be6e03afa06e4f5f4dca0f7a1f3",
+    "geometry": {"type": "Point", "coordinates": [-25.252262027934194, 34.60342920385301]},
+    "type": "Feature",
+    "properties": {
+        "date": "2017-11-04T06:00:00+01",
+        "no2": 248.9255402237177,
+        "name": "Dresden-Nord",
+        "pm10": 362.53001858480275,
+        "no": 9,
+        "predictedpm10": 30.59938870847808
+    }
+}, {
+    "_id": "dd60c1fb02c71302e72989504407b42b",
+    "_rev": "1-7c0123301666dc14cf4bf1c73bd05901",
+    "geometry": {"type": "Point", "coordinates": [31.11909078899771, 4.9496714025735855]},
+    "type": "Feature",
+    "properties": {
+        "date": "2017-11-04T06:00:00+01",
+        "no2": 388.9951246790588,
+        "name": "Dresden-Winckelmannstr",
+        "pm10": 363.7926316424273,
+        "no": 2,
+        "predictedpm10": 31.436656507636023
+    }
+}, {
+    "_id": "dd60c1fb02c71302e72989504407b6c9",
+    "_rev": "1-11808f187cc09bf9d4a497f7e8200828",
+    "geometry": {"type": "Point", "coordinates": [-69.83834131155163, -7.654516501352191]},
+    "type": "Feature",
+    "properties": {
+        "date": "2017-11-04T07:00:00+01",
+        "no2": 343.7465962022543,
+        "name": "Dresden-Bergstraße",
+        "pm10": 268.0037546972744,
+        "no": 25,
+        "predictedpm10": 29.360909682506847
+    }
+}, {
+    "_id": "dd60c1fb02c71302e72989504407bd49",
+    "_rev": "1-f6b447daf0e4472350f6592effefb691",
+    "geometry": {"type": "Point", "coordinates": [-77.49400328379124, -119.47612549178302]},
+    "type": "Feature",
+    "properties": {
+        "date": "2017-11-04T07:00:00+01",
+        "no2": 30.762749444693327,
+        "name": "Dresden-Nord",
+        "pm10": 123.65548712201416,
+        "no": 9,
+        "predictedpm10": 29.42477644960058
+    }
+}, {
+    "_id": "dd60c1fb02c71302e72989504407be2b",
+    "_rev": "1-6442efb9043d7905810818df65c5e933",
+    "geometry": {"type": "Point", "coordinates": [27.503458661958575, 94.60202249698341]},
+    "type": "Feature",
+    "properties": {
+        "date": "2017-11-04T07:00:00+01",
+        "no2": 237.7969680353999,
+        "name": "Dresden-Winckelmannstr",
+        "pm10": 30.78645545290783,
+        "no": 2,
+        "predictedpm10": 32.10732331626167
+    }
+}, {
+    "_id": "dd60c1fb02c71302e72989504407c3b3",
+    "_rev": "1-2609d5ea00c0b71371f854af1c3029de",
+    "geometry": {"type": "Point", "coordinates": [23.424943098798394, 136.653890311718]},
+    "type": "Feature",
+    "properties": {
+        "date": "2017-11-04T08:00:00+01",
+        "no2": 31.691971141844988,
+        "name": "Dresden-Bergstraße",
+        "pm10": 210.46631829580292,
+        "no": 25,
+        "predictedpm10": 28.890953448631066
+    }
+}, {
+    "_id": "dd60c1fb02c71302e72989504407cf63",
+    "_rev": "1-ebaaa73aa73b5ee9c02da42a227334ad",
+    "geometry": {"type": "Point", "coordinates": [16.398357334546745, 42.182122422382236]},
+    "type": "Feature",
+    "properties": {
+        "date": "2017-11-04T08:00:00+01",
+        "no2": 318.2743418030441,
+        "name": "Dresden-Nord",
+        "pm10": 274.5522366161458,
+        "no": 9,
+        "predictedpm10": 33.979841186175115
+    }
+}, {
+    "_id": "dd60c1fb02c71302e72989504407d50f",
+    "_rev": "1-e09ccb994f6b293cc7f9305a58ca84dd",
+    "geometry": {"type": "Point", "coordinates": [4.258499834686518, -106.21675355359912]},
+    "type": "Feature",
+    "properties": {
+        "date": "2017-11-04T08:00:00+01",
+        "no2": 307.01502384617925,
+        "name": "Dresden-Winckelmannstr",
+        "pm10": 19.98726822435856,
+        "no": 2,
+        "predictedpm10": 32.32842480880687
+    }
+}, {
+    "_id": "dd60c1fb02c71302e72989504407de6f",
+    "_rev": "1-dc9e8fc3b02825a292f2bbf518208f6d",
+    "geometry": {"type": "Point", "coordinates": [89.46927838493139, 6.720836106687784]},
+    "type": "Feature",
+    "properties": {
+        "date": "2017-11-04T09:00:00+01",
+        "no2": 303.2196250744164,
+        "name": "Dresden-Bergstraße",
+        "pm10": 227.29745229240507,
+        "no": 25,
+        "predictedpm10": 28.535399386275607
+    }
+}, {
+    "_id": "dd60c1fb02c71302e72989504407ece1",
+    "_rev": "1-6fece4487a5f60122fe53b5a28f49c5e",
+    "geometry": {"type": "Point", "coordinates": [53.99028479587287, 41.96665805764496]},
+    "type": "Feature",
+    "properties": {
+        "date": "2017-11-04T09:00:00+01",
+        "no2": 306.91778883337975,
+        "name": "Dresden-Nord",
+        "pm10": 63.70983675587922,
+        "no": 9,
+        "predictedpm10": 31.50949254047279
+    }
+}, {
+    "_id": "dd60c1fb02c71302e72989504407f2a5",
+    "_rev": "1-b429d0ef81810240b42f4c95b17eb1b7",
+    "geometry": {"type": "Point", "coordinates": [64.36154773458838, -155.60289066284895]},
+    "type": "Feature",
+    "properties": {
+        "date": "2017-11-04T09:00:00+01",
+        "no2": 67.73636862635612,
+        "name": "Dresden-Winckelmannstr",
+        "pm10": 390.05463529378176,
+        "no": 2,
+        "predictedpm10": 32.990203633467395
+    }
+}, {
+    "_id": "dd60c1fb02c71302e72989504407f7d9",
+    "_rev": "1-4dd684020f4e4d3d31b891dc9cb75ca2",
+    "geometry": {"type": "Point", "coordinates": [61.63507900200784, -44.12532250396907]},
+    "type": "Feature",
+    "properties": {
+        "date": "2017-11-04T10:00:00+01",
+        "no2": 135.040254984051,
+        "name": "Dresden-Bergstraße",
+        "pm10": 189.37132098944858,
+        "no": 25,
+        "predictedpm10": 31.320985790695506
+    }
+}, {
+    "_id": "dd60c1fb02c71302e72989504407fe0d",
+    "_rev": "1-840760a8665a7cdedbd2a7e199816e42",
+    "geometry": {"type": "Point", "coordinates": [60.540173831395805, 81.4988078456372]},
+    "type": "Feature",
+    "properties": {
+        "date": "2017-11-04T10:00:00+01",
+        "no2": 341.3372829556465,
+        "name": "Dresden-Nord",
+        "pm10": 0.8301844447851181,
+        "no": 9,
+        "predictedpm10": 30.08236086739168
+    }
+}, {
+    "_id": "dd60c1fb02c71302e729895044080173",
+    "_rev": "1-1ed4257afcd1125b1c76093249a2bc09",
+    "geometry": {"type": "Point", "coordinates": [59.62336373515427, -57.990026604384184]},
+    "type": "Feature",
+    "properties": {
+        "date": "2017-11-04T10:00:00+01",
+        "no2": 284.5580036751926,
+        "name": "Dresden-Winckelmannstr",
+        "pm10": 72.36657436937094,
+        "no": 2,
+        "predictedpm10": 35.05114779813814
+    }
+}, {
+    "_id": "dd60c1fb02c71302e729895044080344",
+    "_rev": "1-5cf4459c258b0763f0431024bd2cb64d",
+    "geometry": {"type": "Point", "coordinates": [34.626530818641186, -114.92361506447196]},
+    "type": "Feature",
+    "properties": {
+        "date": "2017-11-04T11:00:00+01",
+        "no2": 8.295148145407438,
+        "name": "Dresden-Bergstraße",
+        "pm10": 139.40746267559007,
+        "no": 25,
+        "predictedpm10": 32.81178213872309
+    }
+}, {
+    "_id": "dd60c1fb02c71302e729895044080ec1",
+    "_rev": "1-377f747055d9fe8cb52bce6c77ef01e7",
+    "geometry": {"type": "Point", "coordinates": [11.783638098277152, -25.73643671348691]},
+    "type": "Feature",
+    "properties": {
+        "date": "2017-11-04T11:00:00+01",
+        "no2": 155.99677972495556,
+        "name": "Dresden-Nord",
+        "pm10": 201.10968162305653,
+        "no": 9,
+        "predictedpm10": 31.66364408845101
+    }
+}, {
+    "_id": "dd60c1fb02c71302e7298950440814a6",
+    "_rev": "1-f7135fa5247783bfef5775f3d63c286e",
+    "geometry": {"type": "Point", "coordinates": [-16.331038791686296, 137.7028677240014]},
+    "type": "Feature",
+    "properties": {
+        "date": "2017-11-04T11:00:00+01",
+        "no2": 302.73777674883604,
+        "name": "Dresden-Winckelmannstr",
+        "pm10": 12.45979730039835,
+        "no": 2,
+        "predictedpm10": 35.204865899184306
+    }
+}, {
+    "_id": "dd60c1fb02c71302e72989504408179c",
+    "_rev": "1-9f5f922a2d0d642d3336b203958f0a25",
+    "geometry": {"type": "Point", "coordinates": [-1.869735298678279, -93.46640101633966]},
+    "type": "Feature",
+    "properties": {
+        "date": "2017-11-04T12:00:00+01",
+        "no2": 76.61543367430568,
+        "name": "Dresden-Bergstraße",
+        "pm10": 40.75405098963529,
+        "no": 25,
+        "predictedpm10": 29.292046254089744
+    }
+}, {
+    "_id": "dd60c1fb02c71302e729895044081d66",
+    "_rev": "1-08f445676e7dd707d8cc004998e69c49",
+    "geometry": {"type": "Point", "coordinates": [56.407918031327426, 117.53564391285181]},
+    "type": "Feature",
+    "properties": {
+        "date": "2017-11-04T12:00:00+01",
+        "no2": 347.1095892600715,
+        "name": "Dresden-Nord",
+        "pm10": 197.65139685943723,
+        "no": 9,
+        "predictedpm10": 32.81881618147514
+    }
+}, {
+    "_id": "dd60c1fb02c71302e729895044082c3e",
+    "_rev": "1-125eec049b958e31d96c6e61f1d75e0b",
+    "geometry": {"type": "Point", "coordinates": [-18.774495287798345, -73.8843431789428]},
+    "type": "Feature",
+    "properties": {
+        "date": "2017-11-04T12:00:00+01",
+        "no2": 376.18060698732734,
+        "name": "Dresden-Winckelmannstr",
+        "pm10": 234.68060310464352,
+        "no": 2,
+        "predictedpm10": 35.51800773908262
+    }
+}, {
+    "_id": "dd60c1fb02c71302e7298950440837b3",
+    "_rev": "1-24473397c8b5891e5c0f48b351fb00cf",
+    "geometry": {"type": "Point", "coordinates": [-59.78315013460815, -18.70498890057206]},
+    "type": "Feature",
+    "properties": {
+        "date": "2017-11-04T13:00:00+01",
+        "no2": 54.992685187608004,
+        "name": "Dresden-Bergstraße",
+        "pm10": 178.7994047580287,
+        "no": 25,
+        "predictedpm10": 29.337077345342625
+    }
+}, {
+    "_id": "dd60c1fb02c71302e72989504408420a",
+    "_rev": "1-7fc8970a39da5c1c8d40c70b8f0d9267",
+    "geometry": {"type": "Point", "coordinates": [4.072256628423929, -174.20233011245728]},
+    "type": "Feature",
+    "properties": {
+        "date": "2017-11-04T13:00:00+01",
+        "no2": 320.9616740234196,
+        "name": "Dresden-Nord",
+        "pm10": 228.71640452882275,
+        "no": 9,
+        "predictedpm10": 32.12309061740262
+    }
+}, {
+    "_id": "dd60c1fb02c71302e729895044084ce2",
+    "_rev": "1-6b004b19698be6f2be534fca213e3ae8",
+    "geometry": {"type": "Point", "coordinates": [-52.062163380905986, 57.118845116347075]},
+    "type": "Feature",
+    "properties": {
+        "date": "2017-11-04T13:00:00+01",
+        "no2": 296.39150854200125,
+        "name": "Dresden-Winckelmannstr",
+        "pm10": 42.265476756729186,
+        "no": 2,
+        "predictedpm10": 34.45898981730301
+    }
+}, {
+    "_id": "dd60c1fb02c71302e729895044085a48",
+    "_rev": "1-258bc06fca663dc2a853e97b364e8936",
+    "geometry": {"type": "Point", "coordinates": [-78.54493753518909, -130.8895352203399]},
+    "type": "Feature",
+    "properties": {
+        "date": "2017-11-04T14:00:00+01",
+        "no2": 359.65971276164055,
+        "name": "Dresden-Bergstraße",
+        "pm10": 68.09989446308464,
+        "no": 25,
+        "predictedpm10": 29.988175445255152
+    }
+}, {
+    "_id": "dd60c1fb02c71302e729895044086693",
+    "_rev": "1-b48b27af74cf647b7f7bec4819a82c23",
+    "geometry": {"type": "Point", "coordinates": [40.82347605843097, 97.28567412123084]},
+    "type": "Feature",
+    "properties": {
+        "date": "2017-11-04T14:00:00+01",
+        "no2": 193.17429466173053,
+        "name": "Dresden-Nord",
+        "pm10": 140.09686575038359,
+        "no": 9,
+        "predictedpm10": 32.19924642493207
+    }
+}, {
+    "_id": "dd60c1fb02c71302e729895044086e9b",
+    "_rev": "1-c762218f028e876faadec514e95889c3",
+    "geometry": {"type": "Point", "coordinates": [-82.666697348468, 176.37266024015844]},
+    "type": "Feature",
+    "properties": {
+        "date": "2017-11-04T14:00:00+01",
+        "no2": 267.5187688320875,
+        "name": "Dresden-Winckelmannstr",
+        "pm10": 408.3820875757374,
+        "no": 2,
+        "predictedpm10": 35.7344636731155
+    }
+}, {
+    "_id": "dd60c1fb02c71302e729895044087465",
+    "_rev": "1-7cae95aebd1d3c221e5c2bf7edbf16ce",
+    "geometry": {"type": "Point", "coordinates": [63.615616229362786, -101.94553485140204]},
+    "type": "Feature",
+    "properties": {
+        "date": "2017-11-04T15:00:00+01",
+        "no2": 30.53666315972805,
+        "name": "Dresden-Bergstraße",
+        "pm10": 386.0664172982797,
+        "no": 25,
+        "predictedpm10": 29.57975415730867
+    }
+}, {
+    "_id": "dd60c1fb02c71302e729895044088281",
+    "_rev": "1-0f9214d2549652eac9ca99a9f7959e01",
+    "geometry": {"type": "Point", "coordinates": [50.77619415242225, -0.368149196729064]},
+    "type": "Feature",
+    "properties": {
+        "date": "2017-11-04T15:00:00+01",
+        "no2": 372.1293813548982,
+        "name": "Dresden-Nord",
+        "pm10": 239.94458655128255,
+        "no": 9,
+        "predictedpm10": 31.132983987716887
+    }
+}, {
+    "_id": "dd60c1fb02c71302e729895044088a36",
+    "_rev": "1-3447b928502caac46bb8ad5744131474",
+    "geometry": {"type": "Point", "coordinates": [-49.46264167316258, 131.44631126895547]},
+    "type": "Feature",
+    "properties": {
+        "date": "2017-11-04T15:00:00+01",
+        "no2": 239.68982752412558,
+        "name": "Dresden-Winckelmannstr",
+        "pm10": 390.9032838488929,
+        "no": 2,
+        "predictedpm10": 32.44052087789957
+    }
+}, {
+    "_id": "dd60c1fb02c71302e729895044089361",
+    "_rev": "1-ba7911df2c171e9d823bcb2c29fc1736",
+    "geometry": {"type": "Point", "coordinates": [-29.954488961957395, -81.43488669767976]},
+    "type": "Feature",
+    "properties": {
+        "date": "2017-11-04T16:00:00+01",
+        "no2": 350.19166748970747,
+        "name": "Dresden-Bergstraße",
+        "pm10": 396.6648122202605,
+        "no": 25,
+        "predictedpm10": 30.781345473909006
+    }
+}, {
+    "_id": "dd60c1fb02c71302e729895044089fe5",
+    "_rev": "1-27a19e6ef75a4bada0fa03cdcbd915fe",
+    "geometry": {"type": "Point", "coordinates": [62.89909489452839, -124.86154119484127]},
+    "type": "Feature",
+    "properties": {
+        "date": "2017-11-04T16:00:00+01",
+        "no2": 37.93703569099307,
+        "name": "Dresden-Nord",
+        "pm10": 61.70981293544173,
+        "no": 9,
+        "predictedpm10": 31.033272705986054
+    }
+}, {
+    "_id": "dd60c1fb02c71302e72989504408ac71",
+    "_rev": "1-2ccd5436b634f78a764e92f4c84b5a99",
+    "geometry": {"type": "Point", "coordinates": [59.87369681708515, 130.85477387532592]},
+    "type": "Feature",
+    "properties": {
+        "date": "2017-11-04T16:00:00+01",
+        "no2": 305.53466845303774,
+        "name": "Dresden-Winckelmannstr",
+        "pm10": 405.54939600406215,
+        "no": 2,
+        "predictedpm10": 32.6745346967204
+    }
+}, {
+    "_id": "dd60c1fb02c71302e72989504408adec",
+    "_rev": "1-37ba429ac036eaee075ba44351441c99",
+    "geometry": {"type": "Point", "coordinates": [15.60657434631139, 127.15578476898372]},
+    "type": "Feature",
+    "properties": {
+        "date": "2017-11-04T17:00:00+01",
+        "no2": 212.12325990200043,
+        "name": "Dresden-Bergstraße",
+        "pm10": 142.46654611546546,
+        "no": 25,
+        "predictedpm10": 29.68581614952554
+    }
+}, {
+    "_id": "dd60c1fb02c71302e72989504408b38b",
+    "_rev": "1-b3a17fd457b45734e2240f94baccc3c8",
+    "geometry": {"type": "Point", "coordinates": [20.633024065755308, -87.41935039870441]},
+    "type": "Feature",
+    "properties": {
+        "date": "2017-11-04T17:00:00+01",
+        "no2": 20.979177113622427,
+        "name": "Dresden-Nord",
+        "pm10": 232.3496761964634,
+        "no": 9,
+        "predictedpm10": 30.992224589034578
+    }
+}, {
+    "_id": "dd60c1fb02c71302e72989504408c27b",
+    "_rev": "1-08bbac12c896118a26b0b04cd0622a63",
+    "geometry": {"type": "Point", "coordinates": [-71.21340090874583, 161.524006286636]},
+    "type": "Feature",
+    "properties": {
+        "date": "2017-11-04T17:00:00+01",
+        "no2": 181.34729182347655,
+        "name": "Dresden-Winckelmannstr",
+        "pm10": 128.58391823945567,
+        "no": 2,
+        "predictedpm10": 34.81621163486987
+    }
+}, {
+    "_id": "dd60c1fb02c71302e72989504408d0b2",
+    "_rev": "1-ee15ae4a5fda07477bcc29198f4a395b",
+    "geometry": {"type": "Point", "coordinates": [-82.2529461979866, -65.874152937904]},
+    "type": "Feature",
+    "properties": {
+        "date": "2017-11-04T18:00:00+01",
+        "no2": 397.70035902038217,
+        "name": "Dresden-Bergstraße",
+        "pm10": 102.73080875631422,
+        "no": 25,
+        "predictedpm10": 32.044874119586325
+    }
+}, {
+    "_id": "dd60c1fb02c71302e72989504408d310",
+    "_rev": "1-bfee4189bddd7cf9cc3d7b987843147a",
+    "geometry": {"type": "Point", "coordinates": [-21.262647109106183, -129.8520492296666]},
+    "type": "Feature",
+    "properties": {
+        "date": "2017-11-04T18:00:00+01",
+        "no2": 371.19793156161904,
+        "name": "Dresden-Nord",
+        "pm10": 330.7864161906764,
+        "no": 9,
+        "predictedpm10": 33.66484778663986
+    }
+}, {
+    "_id": "dd60c1fb02c71302e72989504408e000",
+    "_rev": "1-36941c5b4db601a67eaf502362ebfe48",
+    "geometry": {"type": "Point", "coordinates": [-18.658369216136634, 21.90683299675584]},
+    "type": "Feature",
+    "properties": {
+        "date": "2017-11-04T18:00:00+01",
+        "no2": 177.5463806465268,
+        "name": "Dresden-Winckelmannstr",
+        "pm10": 29.881909776013345,
+        "no": 2,
+        "predictedpm10": 35.38554046953068
+    }
+}, {
+    "_id": "dd60c1fb02c71302e72989504408e4e0",
+    "_rev": "1-a36ab30e11a395285af3bec5b9cc2ea9",
+    "geometry": {"type": "Point", "coordinates": [-50.220736996270716, -54.48929348029196]},
+    "type": "Feature",
+    "properties": {
+        "date": "2017-11-04T19:00:00+01",
+        "no2": 14.582405518740416,
+        "name": "Dresden-Bergstraße",
+        "pm10": 312.77651516953483,
+        "no": 25,
+        "predictedpm10": 32.592152063609106
+    }
+}, {
+    "_id": "dd60c1fb02c71302e72989504408f170",
+    "_rev": "1-81b11334a6b6ab8b6ab8a093b99c4103",
+    "geometry": {"type": "Point", "coordinates": [-31.693381746299565, -39.87388785928488]},
+    "type": "Feature",
+    "properties": {
+        "date": "2017-11-04T19:00:00+01",
+        "no2": 66.74454221501946,
+        "name": "Dresden-Nord",
+        "pm10": 249.08997437916696,
+        "no": 9,
+        "predictedpm10": 33.95488078493735
+    }
+}, {
+    "_id": "dd60c1fb02c71302e72989504408fcba",
+    "_rev": "1-270ba6ba1c26d177b5182f4b24b1ce5b",
+    "geometry": {"type": "Point", "coordinates": [-24.843738544732332, 95.60920371674001]},
+    "type": "Feature",
+    "properties": {
+        "date": "2017-11-04T19:00:00+01",
+        "no2": 393.88215551152825,
+        "name": "Dresden-Winckelmannstr",
+        "pm10": 213.88145826291293,
+        "no": 2,
+        "predictedpm10": 31.63625565704513
+    }
+}, {
+    "_id": "dd60c1fb02c71302e729895044090994",
+    "_rev": "1-3a7c27ee74b8ec979815e3eb317aed1d",
+    "geometry": {"type": "Point", "coordinates": [65.92774758115411, 96.86365133151412]},
+    "type": "Feature",
+    "properties": {
+        "date": "2017-11-04T20:00:00+01",
+        "no2": 186.9438597932458,
+        "name": "Dresden-Bergstraße",
+        "pm10": 140.65717733697966,
+        "no": 25,
+        "predictedpm10": 32.02812112517385
+    }
+}, {
+    "_id": "dd60c1fb02c71302e7298950440916ed",
+    "_rev": "1-f0e857dc6a4a2b2e37a3b19ceb09c176",
+    "geometry": {"type": "Point", "coordinates": [-47.79111981857568, 104.76274631917477]},
+    "type": "Feature",
+    "properties": {
+        "date": "2017-11-04T20:00:00+01",
+        "no2": 109.47575941681862,
+        "name": "Dresden-Nord",
+        "pm10": 249.33189081726596,
+        "no": 9,
+        "predictedpm10": 31.054463127657478
+    }
+}, {
+    "_id": "dd60c1fb02c71302e72989504409211e",
+    "_rev": "1-0f182f4c7b5cc8e391cd3e79132149a3",
+    "geometry": {"type": "Point", "coordinates": [-62.857438093051314, -141.38755353167653]},
+    "type": "Feature",
+    "properties": {
+        "date": "2017-11-04T20:00:00+01",
+        "no2": 36.26903807744384,
+        "name": "Dresden-Winckelmannstr",
+        "pm10": 137.24635892780498,
+        "no": 2,
+        "predictedpm10": 35.83116076304495
+    }
+}, {
+    "_id": "dd60c1fb02c71302e729895044092f16",
+    "_rev": "1-1cbbca82cf1c457cfb6e6484f72fc269",
+    "geometry": {"type": "Point", "coordinates": [79.3747708434239, 83.61455954611301]},
+    "type": "Feature",
+    "properties": {
+        "date": "2017-11-04T21:00:00+01",
+        "no2": 223.37599713355303,
+        "name": "Dresden-Bergstraße",
+        "pm10": 203.90929187647998,
+        "no": 25,
+        "predictedpm10": 28.198372136873296
+    }
+}, {
+    "_id": "dd60c1fb02c71302e729895044093221",
+    "_rev": "1-86d0925a989b82021a890c03a2adb19f",
+    "geometry": {"type": "Point", "coordinates": [35.632127188146114, 174.45600740611553]},
+    "type": "Feature",
+    "properties": {
+        "date": "2017-11-04T21:00:00+01",
+        "no2": 181.82239094749093,
+        "name": "Dresden-Nord",
+        "pm10": 405.3560384991579,
+        "no": 9,
+        "predictedpm10": 30.057527867596967
+    }
+}, {
+    "_id": "dd60c1fb02c71302e729895044094193",
+    "_rev": "1-c858a8b057c057025c60433036b4a46b",
+    "geometry": {"type": "Point", "coordinates": [-65.54292246233672, 104.72329219803214]},
+    "type": "Feature",
+    "properties": {
+        "date": "2017-11-04T21:00:00+01",
+        "no2": 130.0673957914114,
+        "name": "Dresden-Winckelmannstr",
+        "pm10": 257.53033394459635,
+        "no": 2,
+        "predictedpm10": 31.406136940998987
+    }
+}, {
+    "_id": "dd60c1fb02c71302e729895044094716",
+    "_rev": "1-fab712b9b5cda8dc103826045f397af2",
+    "geometry": {"type": "Point", "coordinates": [85.35912998020649, -93.34535401314497]},
+    "type": "Feature",
+    "properties": {
+        "date": "2017-11-04T22:00:00+01",
+        "no2": 66.99987947940826,
+        "name": "Dresden-Bergstraße",
+        "pm10": 257.2969412826933,
+        "no": 25,
+        "predictedpm10": 30.892900513555606
+    }
+}, {
+    "_id": "dd60c1fb02c71302e7298950440955f7",
+    "_rev": "1-fab6114f1cd2ece9ddf3f89398097ff5",
+    "geometry": {"type": "Point", "coordinates": [-20.91707477811724, 52.47310034930706]},
+    "type": "Feature",
+    "properties": {
+        "date": "2017-11-04T22:00:00+01",
+        "no2": 160.9749436378479,
+        "name": "Dresden-Nord",
+        "pm10": 216.3911632122472,
+        "no": 9,
+        "predictedpm10": 33.79606844022781
+    }
+}, {
+    "_id": "dd60c1fb02c71302e729895044095b8f",
+    "_rev": "1-72fea3d867d38d3bf9e33a3c2e013d31",
+    "geometry": {"type": "Point", "coordinates": [71.62578706629574, 152.23041398450732]},
+    "type": "Feature",
+    "properties": {
+        "date": "2017-11-04T22:00:00+01",
+        "no2": 157.4550000950694,
+        "name": "Dresden-Winckelmannstr",
+        "pm10": 220.73669190285727,
+        "no": 2,
+        "predictedpm10": 35.766350753005526
+    }
+}, {
+    "_id": "dd60c1fb02c71302e7298950440967e5",
+    "_rev": "1-5326e8f3805b19fc9a58f30e1d1deabc",
+    "geometry": {"type": "Point", "coordinates": [76.4422397268936, -74.05910384841263]},
+    "type": "Feature",
+    "properties": {
+        "date": "2017-11-04T23:00:00+01",
+        "no2": 308.0033738166094,
+        "name": "Dresden-Bergstraße",
+        "pm10": 370.3187430789694,
+        "no": 25,
+        "predictedpm10": 30.73688476442921
+    }
+}, {
+    "_id": "dd60c1fb02c71302e72989504409701c",
+    "_rev": "1-164e6fed3ba4be01588ec9771c49d9fa",
+    "geometry": {"type": "Point", "coordinates": [-5.234618014656007, -160.45050367712975]},
+    "type": "Feature",
+    "properties": {
+        "date": "2017-11-04T23:00:00+01",
+        "no2": 340.82237407565117,
+        "name": "Dresden-Nord",
+        "pm10": 70.81899288576096,
+        "no": 9,
+        "predictedpm10": 32.37784882363481
+    }
+}, {
+    "_id": "dd60c1fb02c71302e729895044097265",
+    "_rev": "1-d28c48d9e76e5431ebda6c5c29e65f69",
+    "geometry": {"type": "Point", "coordinates": [-6.316426671110094, 77.67234382219613]},
+    "type": "Feature",
+    "properties": {
+        "date": "2017-11-04T23:00:00+01",
+        "no2": 396.3860363699496,
+        "name": "Dresden-Winckelmannstr",
+        "pm10": 22.12497238535434,
+        "no": 2,
+        "predictedpm10": 32.34954760183662
+    }
+}, {
+    "_id": "dd60c1fb02c71302e729895044097df4",
+    "_rev": "1-76203b6ccfa3c287fffb269b45a4ad59",
+    "geometry": {"type": "Point", "coordinates": [-42.06620074342936, 52.0946535654366]},
+    "type": "Feature",
+    "properties": {
+        "date": "2017-11-05T00:00:00+01",
+        "no2": 267.1903255395591,
+        "name": "Dresden-Bergstraße",
+        "pm10": 110.34726152429357,
+        "no": 20,
+        "predictedpm10": 32.534579001417356
+    }
+}, {
+    "_id": "dd60c1fb02c71302e729895044098d05",
+    "_rev": "1-72cecf617106a75164422dec29f71dc1",
+    "geometry": {"type": "Point", "coordinates": [89.89971383940428, 13.204010054469109]},
+    "type": "Feature",
+    "properties": {
+        "date": "2017-11-05T00:00:00+01",
+        "no2": 121.24005481600761,
+        "name": "Dresden-Nord",
+        "pm10": 369.84427276067436,
+        "no": 8,
+        "predictedpm10": 28.138139101868198
+    }
+}, {
+    "_id": "dd60c1fb02c71302e729895044099c7d",
+    "_rev": "1-79e26de1d9eec54ab72fa2b6528f6c38",
+    "geometry": {"type": "Point", "coordinates": [-7.701492458581924, -115.55671814829111]},
+    "type": "Feature",
+    "properties": {
+        "date": "2017-11-05T00:00:00+01",
+        "no2": 370.9155559539795,
+        "name": "Dresden-Winckelmannstr",
+        "pm10": 50.66854537697509,
+        "no": 1,
+        "predictedpm10": 32.60557939124381
+    }
+}, {
+    "_id": "dd60c1fb02c71302e72989504409a935",
+    "_rev": "1-7124dd52e52b7154eccbc72beaf59b63",
+    "geometry": {"type": "Point", "coordinates": [51.95134053938091, -134.83804788440466]},
+    "type": "Feature",
+    "properties": {
+        "date": "2017-11-05T01:00:00+01",
+        "no2": 331.00770143792033,
+        "name": "Dresden-Bergstraße",
+        "pm10": 203.97905642865226,
+        "no": 20,
+        "predictedpm10": 33.609297453835694
+    }
+}, {
+    "_id": "dd60c1fb02c71302e72989504409b0a1",
+    "_rev": "1-562a0f146518dfd247a20e57b2d42048",
+    "geometry": {"type": "Point", "coordinates": [81.46982540376484, 128.7926952727139]},
+    "type": "Feature",
+    "properties": {
+        "date": "2017-11-05T01:00:00+01",
+        "no2": 180.78548861667514,
+        "name": "Dresden-Nord",
+        "pm10": 345.59821686707437,
+        "no": 8,
+        "predictedpm10": 31.3488892299321
+    }
+}, {
+    "_id": "dd60c1fb02c71302e72989504409b5a5",
+    "_rev": "1-39cb68e5911b2fbe62febd9f713f4206",
+    "geometry": {"type": "Point", "coordinates": [-72.70170228090137, 153.74557826668024]},
+    "type": "Feature",
+    "properties": {
+        "date": "2017-11-05T01:00:00+01",
+        "no2": 105.8159651234746,
+        "name": "Dresden-Winckelmannstr",
+        "pm10": 382.01810536906123,
+        "no": 1,
+        "predictedpm10": 35.88845904605131
+    }
+}, {
+    "_id": "dd60c1fb02c71302e72989504409c0d6",
+    "_rev": "1-706b70f59cd12412ed7fd65ad301d559",
+    "geometry": {"type": "Point", "coordinates": [-89.63511735666543, 86.70307452790439]},
+    "type": "Feature",
+    "properties": {
+        "date": "2017-11-05T02:00:00+01",
+        "no2": 178.00515675917268,
+        "name": "Dresden-Bergstraße",
+        "pm10": 190.00437311129645,
+        "no": 20,
+        "predictedpm10": 31.701823735388686
+    }
+}, {
+    "_id": "dd60c1fb02c71302e72989504409cd3e",
+    "_rev": "1-0e452ab9af94fdd215e591e57e76aa6c",
+    "geometry": {"type": "Point", "coordinates": [81.50445029139519, -58.89089126139879]},
+    "type": "Feature",
+    "properties": {
+        "date": "2017-11-05T02:00:00+01",
+        "no2": 19.39614536240697,
+        "name": "Dresden-Nord",
+        "pm10": 310.0364627223462,
+        "no": 8,
+        "predictedpm10": 31.032633765723975
+    }
+}, {
+    "_id": "dd60c1fb02c71302e72989504409d3d9",
+    "_rev": "1-545be782e78b3289accdfc1398ab8737",
+    "geometry": {"type": "Point", "coordinates": [-86.65863330010325, -125.77474443241954]},
+    "type": "Feature",
+    "properties": {
+        "date": "2017-11-05T02:00:00+01",
+        "no2": 61.31558297201991,
+        "name": "Dresden-Winckelmannstr",
+        "pm10": 363.42199615202844,
+        "no": 1,
+        "predictedpm10": 35.6426915582256
+    }
+}, {
+    "_id": "dd60c1fb02c71302e72989504409da18",
+    "_rev": "1-d2f15f223df94b5b21b0e73c49c5d30b",
+    "geometry": {"type": "Point", "coordinates": [24.860625858418643, 129.95589246042073]},
+    "type": "Feature",
+    "properties": {
+        "date": "2017-11-05T03:00:00+01",
+        "no2": 397.03197851777077,
+        "name": "Dresden-Bergstraße",
+        "pm10": 411.19911551475525,
+        "no": 20,
+        "predictedpm10": 31.579329089781268
+    }
+}, {
+    "_id": "dd60c1fb02c71302e72989504409e2f9",
+    "_rev": "1-0ef96a2415fda8499b10d0ab84f494ce",
+    "geometry": {"type": "Point", "coordinates": [47.43101163301617, -158.03274965845048]},
+    "type": "Feature",
+    "properties": {
+        "date": "2017-11-05T03:00:00+01",
+        "no2": 13.43584768474102,
+        "name": "Dresden-Nord",
+        "pm10": 163.64900799002498,
+        "no": 8,
+        "predictedpm10": 29.450897929021618
+    }
+}, {
+    "_id": "dd60c1fb02c71302e72989504409e932",
+    "_rev": "1-cd88c82807ea7bcc6c6926051c09d640",
+    "geometry": {"type": "Point", "coordinates": [-78.65768942981958, -142.5096994265914]},
+    "type": "Feature",
+    "properties": {
+        "date": "2017-11-05T03:00:00+01",
+        "no2": 199.98683473095298,
+        "name": "Dresden-Winckelmannstr",
+        "pm10": 405.06111432099715,
+        "no": 1,
+        "predictedpm10": 33.35507653594973
+    }
+}, {
+    "_id": "dd60c1fb02c71302e72989504409f047",
+    "_rev": "1-617c10053623d3ec1f897e1e3825858c",
+    "geometry": {"type": "Point", "coordinates": [-67.88835100829601, 97.03889789991081]},
+    "type": "Feature",
+    "properties": {
+        "date": "2017-11-05T04:00:00+01",
+        "no2": 130.26386247947812,
+        "name": "Dresden-Bergstraße",
+        "pm10": 296.82189914630726,
+        "no": 20,
+        "predictedpm10": 30.89447211985181
+    }
+}, {
+    "_id": "dd60c1fb02c71302e72989504409f8c7",
+    "_rev": "1-4937c66156c286d8176def2af2835f81",
+    "geometry": {"type": "Point", "coordinates": [-23.77660651691258, 6.839434923604131]},
+    "type": "Feature",
+    "properties": {
+        "date": "2017-11-05T04:00:00+01",
+        "no2": 366.95137545466423,
+        "name": "Dresden-Nord",
+        "pm10": 28.804180705919862,
+        "no": 8,
+        "predictedpm10": 31.405555609506045
+    }
+}, {
+    "_id": "dd60c1fb02c71302e7298950440a04f7",
+    "_rev": "1-b70cd2a11f066505e676354e4b71add7",
+    "geometry": {"type": "Point", "coordinates": [62.224364639259875, 131.79297144524753]},
+    "type": "Feature",
+    "properties": {
+        "date": "2017-11-05T04:00:00+01",
+        "no2": 284.2674373649061,
+        "name": "Dresden-Winckelmannstr",
+        "pm10": 266.60182698629797,
+        "no": 1,
+        "predictedpm10": 32.24974997563816
+    }
+}, {
+    "_id": "dd60c1fb02c71302e7298950440a08db",
+    "_rev": "1-3014cb4b97739b5ea461e442e328921e",
+    "geometry": {"type": "Point", "coordinates": [-6.926588108763099, -24.90570930764079]},
+    "type": "Feature",
+    "properties": {
+        "date": "2017-11-05T05:00:00+01",
+        "no2": 323.7553544342518,
+        "name": "Dresden-Bergstraße",
+        "pm10": 276.0890081478283,
+        "no": 20,
+        "predictedpm10": 30.171856544165454
+    }
+}, {
+    "_id": "dd60c1fb02c71302e7298950440a0a05",
+    "_rev": "1-4fca8d3873c84062146902c7bf55aca6",
+    "geometry": {"type": "Point", "coordinates": [43.19521791301668, 124.4635383412242]},
+    "type": "Feature",
+    "properties": {
+        "date": "2017-11-05T05:00:00+01",
+        "no2": 275.30454797670245,
+        "name": "Dresden-Nord",
+        "pm10": 162.52706647384912,
+        "no": 8,
+        "predictedpm10": 32.170629197001546
+    }
+}, {
+    "_id": "dd60c1fb02c71302e7298950440a1319",
+    "_rev": "1-ec6229800b824c38ba15becb6f9619a5",
+    "geometry": {"type": "Point", "coordinates": [-0.791116333566606, -65.61560139991343]},
+    "type": "Feature",
+    "properties": {
+        "date": "2017-11-05T05:00:00+01",
+        "no2": 286.57172080129385,
+        "name": "Dresden-Winckelmannstr",
+        "pm10": 128.70093789882958,
+        "no": 1,
+        "predictedpm10": 35.9880559510711
+    }
+}, {
+    "_id": "dd60c1fb02c71302e7298950440a181f",
+    "_rev": "1-96edbfb733cfd3d6fac16c4666fdd534",
+    "geometry": {"type": "Point", "coordinates": [73.4436672180891, 42.87225094623864]},
+    "type": "Feature",
+    "properties": {
+        "date": "2017-11-05T06:00:00+01",
+        "no2": 348.0347977951169,
+        "name": "Dresden-Bergstraße",
+        "pm10": 45.7274814741686,
+        "no": 20,
+        "predictedpm10": 31.8932215162633
+    }
+}, {
+    "_id": "dd60c1fb02c71302e7298950440a1b75",
+    "_rev": "1-86af579fe4bfc65affe6cf671b917d70",
+    "geometry": {"type": "Point", "coordinates": [-2.7086150692775846, -0.10423114523291588]},
+    "type": "Feature",
+    "properties": {
+        "date": "2017-11-05T06:00:00+01",
+        "no2": 80.54849468171597,
+        "name": "Dresden-Nord",
+        "pm10": 190.40722550824285,
+        "no": 8,
+        "predictedpm10": 30.950048963078704
+    }
+}, {
+    "_id": "dd60c1fb02c71302e7298950440a2488",
+    "_rev": "1-84868909acefdf57825463da4fe73975",
+    "geometry": {"type": "Point", "coordinates": [27.47654906474054, -43.516723327338696]},
+    "type": "Feature",
+    "properties": {
+        "date": "2017-11-05T06:00:00+01",
+        "no2": 349.7178408317268,
+        "name": "Dresden-Winckelmannstr",
+        "pm10": 213.86514306766912,
+        "no": 1,
+        "predictedpm10": 31.095298243109696
+    }
+}, {
+    "_id": "dd60c1fb02c71302e7298950440a2b71",
+    "_rev": "1-3cfe6a1ea4605ef15f8a4c4815b42881",
+    "geometry": {"type": "Point", "coordinates": [-43.0342779122293, -114.42173570394516]},
+    "type": "Feature",
+    "properties": {
+        "date": "2017-11-05T07:00:00+01",
+        "no2": 330.17723774537444,
+        "name": "Dresden-Bergstraße",
+        "pm10": 314.2598241288215,
+        "no": 20,
+        "predictedpm10": 34.17908659420751
+    }
+}, {
+    "_id": "dd60c1fb02c71302e7298950440a3870",
+    "_rev": "1-49f51a43bf5a101bb2c4979015601762",
+    "geometry": {"type": "Point", "coordinates": [-28.154810070991516, 76.71701137907803]},
+    "type": "Feature",
+    "properties": {
+        "date": "2017-11-05T07:00:00+01",
+        "no2": 74.17712975293398,
+        "name": "Dresden-Nord",
+        "pm10": 277.8231615945697,
+        "no": 8,
+        "predictedpm10": 29.718699029142602
+    }
+}, {
+    "_id": "dd60c1fb02c71302e7298950440a3a93",
+    "_rev": "1-d3e5d89d0eac2d7e02308c125fbf41be",
+    "geometry": {"type": "Point", "coordinates": [80.18956358078867, -113.08470547199249]},
+    "type": "Feature",
+    "properties": {
+        "date": "2017-11-05T07:00:00+01",
+        "no2": 320.10104740038514,
+        "name": "Dresden-Winckelmannstr",
+        "pm10": 171.35650641750544,
+        "no": 1,
+        "predictedpm10": 33.87334617176872
+    }
+}, {
+    "_id": "dd60c1fb02c71302e7298950440a3dc9",
+    "_rev": "1-8e3fb4f8458318c6edb1a9e0ca09852d",
+    "geometry": {"type": "Point", "coordinates": [48.057630895636976, -15.183834107592702]},
+    "type": "Feature",
+    "properties": {
+        "date": "2017-11-05T08:00:00+01",
+        "no2": 213.4242281317711,
+        "name": "Dresden-Bergstraße",
+        "pm10": 268.8807454239577,
+        "no": 20,
+        "predictedpm10": 33.629052595219925
+    }
+}, {
+    "_id": "dd60c1fb02c71302e7298950440a495f",
+    "_rev": "1-b290c44faac2e872fa1ae10a16f4f432",
+    "geometry": {"type": "Point", "coordinates": [45.34042613580823, 8.042087405920029]},
+    "type": "Feature",
+    "properties": {
+        "date": "2017-11-05T08:00:00+01",
+        "no2": 46.65408404543996,
+        "name": "Dresden-Nord",
+        "pm10": 9.055907500442117,
+        "no": 8,
+        "predictedpm10": 31.095990435953226
+    }
+}, {
+    "_id": "dd60c1fb02c71302e7298950440a4fd7",
+    "_rev": "1-760b26547a4bfa4f161a6d1e9cebfab0",
+    "geometry": {"type": "Point", "coordinates": [-10.524041228927672, 177.13832253590226]},
+    "type": "Feature",
+    "properties": {
+        "date": "2017-11-05T08:00:00+01",
+        "no2": 287.2414889745414,
+        "name": "Dresden-Winckelmannstr",
+        "pm10": 14.72362327389419,
+        "no": 1,
+        "predictedpm10": 33.64188788344193
+    }
+}, {
+    "_id": "dd60c1fb02c71302e7298950440a5cf5",
+    "_rev": "1-ba201a295de0f317a8467190fc0e4b8a",
+    "geometry": {"type": "Point", "coordinates": [-10.787611682899296, -103.16103486344218]},
+    "type": "Feature",
+    "properties": {
+        "date": "2017-11-05T09:00:00+01",
+        "no2": 73.26041758060455,
+        "name": "Dresden-Bergstraße",
+        "pm10": 105.95116625074297,
+        "no": 20,
+        "predictedpm10": 33.64572209476495
+    }
+}, {
+    "_id": "dd60c1fb02c71302e7298950440a68a8",
+    "_rev": "1-74d4152013d44f5c7546821795c04765",
+    "geometry": {"type": "Point", "coordinates": [-9.12428309675306, 145.871535949409]},
+    "type": "Feature",
+    "properties": {
+        "date": "2017-11-05T09:00:00+01",
+        "no2": 385.2884603664279,
+        "name": "Dresden-Nord",
+        "pm10": 208.57900549191982,
+        "no": 8,
+        "predictedpm10": 32.83369188008866
+    }
+}, {
+    "_id": "dd60c1fb02c71302e7298950440a7639",
+    "_rev": "1-c20a632a4daf757de53d270585ddf5fd",
+    "geometry": {"type": "Point", "coordinates": [34.10783367231488, -78.64688809029758]},
+    "type": "Feature",
+    "properties": {
+        "date": "2017-11-05T09:00:00+01",
+        "no2": 20.301110483705997,
+        "name": "Dresden-Winckelmannstr",
+        "pm10": 199.73214656114578,
+        "no": 1,
+        "predictedpm10": 33.09314208469371
+    }
+}, {
+    "_id": "dd60c1fb02c71302e7298950440a7ab6",
+    "_rev": "1-299e929af7a814526788bcb9f20f1456",
+    "geometry": {"type": "Point", "coordinates": [59.78893788065761, -138.53571030311286]},
+    "type": "Feature",
+    "properties": {
+        "date": "2017-11-05T10:00:00+01",
+        "no2": 34.38702505081892,
+        "name": "Dresden-Bergstraße",
+        "pm10": 343.37084646103904,
+        "no": 20,
+        "predictedpm10": 31.658977223700674
+    }
+}, {
+    "_id": "dd60c1fb02c71302e7298950440a823f",
+    "_rev": "1-194a9cfc00c755873f63f2163da23d2b",
+    "geometry": {"type": "Point", "coordinates": [6.84869805816561, 71.93193557672203]},
+    "type": "Feature",
+    "properties": {
+        "date": "2017-11-05T10:00:00+01",
+        "no2": 269.6031509898603,
+        "name": "Dresden-Nord",
+        "pm10": 137.18017466599122,
+        "no": 8,
+        "predictedpm10": 29.84892733409348
+    }
+}, {
+    "_id": "dd60c1fb02c71302e7298950440a8eb8",
+    "_rev": "1-cf4fc01c6741a8bc85a288cb7368a6fa",
+    "geometry": {"type": "Point", "coordinates": [-19.35045470483601, 167.30256426148117]},
+    "type": "Feature",
+    "properties": {
+        "date": "2017-11-05T10:00:00+01",
+        "no2": 286.95420511066914,
+        "name": "Dresden-Winckelmannstr",
+        "pm10": 219.02801257092506,
+        "no": 1,
+        "predictedpm10": 31.1280749849347
+    }
+}, {
+    "_id": "dd60c1fb02c71302e7298950440a9dff",
+    "_rev": "1-6bdefb34acff33ab8b356a3a2e12a2a6",
+    "geometry": {"type": "Point", "coordinates": [-27.29661671910435, -37.70480738952756]},
+    "type": "Feature",
+    "properties": {
+        "date": "2017-11-05T11:00:00+01",
+        "no2": 93.8668548129499,
+        "name": "Dresden-Bergstraße",
+        "pm10": 243.18155008135363,
+        "no": 20,
+        "predictedpm10": 31.28502066286655
+    }
+}, {
+    "_id": "dd60c1fb02c71302e7298950440aa39b",
+    "_rev": "1-2eea74afba0274e033b0a44c08125d50",
+    "geometry": {"type": "Point", "coordinates": [-69.12435156293213, 69.55298063345253]},
+    "type": "Feature",
+    "properties": {
+        "date": "2017-11-05T11:00:00+01",
+        "no2": 211.3955362699926,
+        "name": "Dresden-Nord",
+        "pm10": 158.20507182739675,
+        "no": 8,
+        "predictedpm10": 28.25520949995191
+    }
+}, {
+    "_id": "dd60c1fb02c71302e7298950440aacd5",
+    "_rev": "1-1839026cfc0560aac1558fdf5d057d6d",
+    "geometry": {"type": "Point", "coordinates": [20.84295591339469, 178.42689623124897]},
+    "type": "Feature",
+    "properties": {
+        "date": "2017-11-05T11:00:00+01",
+        "no2": 371.12201070412993,
+        "name": "Dresden-Winckelmannstr",
+        "pm10": 370.07710016099736,
+        "no": 1,
+        "predictedpm10": 35.79205743133746
+    }
+}, {
+    "_id": "dd60c1fb02c71302e7298950440ab6f6",
+    "_rev": "1-33655d7837996788ac333b929809df94",
+    "geometry": {"type": "Point", "coordinates": [-38.93467310350388, 69.43391955457628]},
+    "type": "Feature",
+    "properties": {
+        "date": "2017-11-05T12:00:00+01",
+        "no2": 50.772264413535595,
+        "name": "Dresden-Bergstraße",
+        "pm10": 310.6076133949682,
+        "no": 20,
+        "predictedpm10": 31.03044956950551
+    }
+}, {
+    "_id": "dd60c1fb02c71302e7298950440ac2e9",
+    "_rev": "1-8939c4b950644eb210aa0bcb4781dbae",
+    "geometry": {"type": "Point", "coordinates": [-16.82123641949147, 143.33770925179124]},
+    "type": "Feature",
+    "properties": {
+        "date": "2017-11-05T12:00:00+01",
+        "no2": 22.101799957454205,
+        "name": "Dresden-Nord",
+        "pm10": 187.3735689278692,
+        "no": 8,
+        "predictedpm10": 30.855152957795607
+    }
+}, {
+    "_id": "dd60c1fb02c71302e7298950440ac7f2",
+    "_rev": "1-e09eaaaa862c656289e8680e16a5e4c3",
+    "geometry": {"type": "Point", "coordinates": [-56.24634616076946, -97.0399708673358]},
+    "type": "Feature",
+    "properties": {
+        "date": "2017-11-05T12:00:00+01",
+        "no2": 217.19279633834958,
+        "name": "Dresden-Winckelmannstr",
+        "pm10": 232.7616982255131,
+        "no": 1,
+        "predictedpm10": 35.545111353959776
+    }
+}, {
+    "_id": "dd60c1fb02c71302e7298950440ac9e3",
+    "_rev": "1-40c17f3b168b899ef561e5f3d4f3dcc4",
+    "geometry": {"type": "Point", "coordinates": [-42.67887888941914, 25.976680666208267]},
+    "type": "Feature",
+    "properties": {
+        "date": "2017-11-05T13:00:00+01",
+        "no2": 384.12554962560534,
+        "name": "Dresden-Bergstraße",
+        "pm10": 60.322094054427,
+        "no": 20,
+        "predictedpm10": 32.14380934883928
+    }
+}, {
+    "_id": "dd60c1fb02c71302e7298950440acd72",
+    "_rev": "1-1b774166fb4b8c8ca31da0e023653d2d",
+    "geometry": {"type": "Point", "coordinates": [53.779384922236204, -26.715390952304006]},
+    "type": "Feature",
+    "properties": {
+        "date": "2017-11-05T13:00:00+01",
+        "no2": 394.62799075990915,
+        "name": "Dresden-Nord",
+        "pm10": 91.01321622962132,
+        "no": 8,
+        "predictedpm10": 31.635570825136746
+    }
+}, {
+    "_id": "dd60c1fb02c71302e7298950440ad023",
+    "_rev": "1-795e88ff3c042dcc2b6e199b938bce90",
+    "geometry": {"type": "Point", "coordinates": [60.13571779243648, -124.53488652594388]},
+    "type": "Feature",
+    "properties": {
+        "date": "2017-11-05T13:00:00+01",
+        "no2": 270.88959673419595,
+        "name": "Dresden-Winckelmannstr",
+        "pm10": 339.79307965608314,
+        "no": 1,
+        "predictedpm10": 32.92263417781955
+    }
+}, {
+    "_id": "dd60c1fb02c71302e7298950440ad6a5",
+    "_rev": "1-1a1ef2921df0471312d3d17f441d405a",
+    "geometry": {"type": "Point", "coordinates": [27.920009954832494, -162.20986247062683]},
+    "type": "Feature",
+    "properties": {
+        "date": "2017-11-05T14:00:00+01",
+        "no2": 131.65030339732766,
+        "name": "Dresden-Bergstraße",
+        "pm10": 278.75234961276874,
+        "no": 20,
+        "predictedpm10": 31.570640642071865
+    }
+}, {
+    "_id": "dd60c1fb02c71302e7298950440ad8e1",
+    "_rev": "1-616ef2ca1378cd4f1e631d590170d1ae",
+    "geometry": {"type": "Point", "coordinates": [-60.84991683717817, -146.10741687007248]},
+    "type": "Feature",
+    "properties": {
+        "date": "2017-11-05T14:00:00+01",
+        "no2": 369.34719923883677,
+        "name": "Dresden-Nord",
+        "pm10": 316.2242641020566,
+        "no": 8,
+        "predictedpm10": 30.839095899221462
+    }
+}, {
+    "_id": "dd60c1fb02c71302e7298950440adb4c",
+    "_rev": "1-e9ea2fd73e3cb8befda3a5a184bbc8ad",
+    "geometry": {"type": "Point", "coordinates": [-63.872174425050616, 43.85254235006869]},
+    "type": "Feature",
+    "properties": {
+        "date": "2017-11-05T14:00:00+01",
+        "no2": 201.7437749542296,
+        "name": "Dresden-Winckelmannstr",
+        "pm10": 256.75127513706684,
+        "no": 1,
+        "predictedpm10": 34.9555275985767
+    }
+}, {
+    "_id": "dd60c1fb02c71302e7298950440ae987",
+    "_rev": "1-4da5bdfa76221e3bf7704994ba087f56",
+    "geometry": {"type": "Point", "coordinates": [49.827552353963256, 154.47599155828357]},
+    "type": "Feature",
+    "properties": {
+        "date": "2017-11-05T15:00:00+01",
+        "no2": 278.4371607005596,
+        "name": "Dresden-Bergstraße",
+        "pm10": 17.42712404113263,
+        "no": 20,
+        "predictedpm10": 34.780721174599854
+    }
+}, {
+    "_id": "dd60c1fb02c71302e7298950440aec0f",
+    "_rev": "1-2001cb2c502f649886253f0f146493fd",
+    "geometry": {"type": "Point", "coordinates": [88.64169452805072, -41.33680631406605]},
+    "type": "Feature",
+    "properties": {
+        "date": "2017-11-05T15:00:00+01",
+        "no2": 71.33252462372184,
+        "name": "Dresden-Nord",
+        "pm10": 263.7767788604833,
+        "no": 8,
+        "predictedpm10": 28.60691826127103
+    }
+}, {
+    "_id": "dd60c1fb02c71302e7298950440af153",
+    "_rev": "1-8153b7f9d5dd003b2d2171714958476e",
+    "geometry": {"type": "Point", "coordinates": [-64.64216827880591, 90.60719780623913]},
+    "type": "Feature",
+    "properties": {
+        "date": "2017-11-05T15:00:00+01",
+        "no2": 214.23757802695036,
+        "name": "Dresden-Winckelmannstr",
+        "pm10": 94.16192616801709,
+        "no": 1,
+        "predictedpm10": 34.706201130436334
+    }
+}, {
+    "_id": "dd60c1fb02c71302e7298950440af744",
+    "_rev": "1-41799e2b880b9c761c821b98410110a0",
+    "geometry": {"type": "Point", "coordinates": [73.19638460408896, 54.061898812651634]},
+    "type": "Feature",
+    "properties": {
+        "date": "2017-11-05T16:00:00+01",
+        "no2": 391.3334973156452,
+        "name": "Dresden-Bergstraße",
+        "pm10": 158.47122323000804,
+        "no": 20,
+        "predictedpm10": 34.63932068347897
+    }
+}, {
+    "_id": "dd60c1fb02c71302e7298950440b044b",
+    "_rev": "1-d3555cbb69559947570471c42c479de0",
+    "geometry": {"type": "Point", "coordinates": [-63.82131773047149, -118.92968491651118]},
+    "type": "Feature",
+    "properties": {
+        "date": "2017-11-05T16:00:00+01",
+        "no2": 193.40849220752716,
+        "name": "Dresden-Nord",
+        "pm10": 216.21651770779863,
+        "no": 8,
+        "predictedpm10": 28.569964297324407
+    }
+}, {
+    "_id": "dd60c1fb02c71302e7298950440b0b6e",
+    "_rev": "1-3108f578ce8a2b74301883e847db5b5e",
+    "geometry": {"type": "Point", "coordinates": [-23.956137453205884, -121.77500350400805]},
+    "type": "Feature",
+    "properties": {
+        "date": "2017-11-05T16:00:00+01",
+        "no2": 9.630548767745495,
+        "name": "Dresden-Winckelmannstr",
+        "pm10": 163.45196897629648,
+        "no": 1,
+        "predictedpm10": 32.44931342639531
+    }
+}, {
+    "_id": "dd60c1fb02c71302e7298950440b0ed1",
+    "_rev": "1-fa32663d7157b43b1f5c365caa9b4056",
+    "geometry": {"type": "Point", "coordinates": [-1.495356922969222, 158.39662659913301]},
+    "type": "Feature",
+    "properties": {
+        "date": "2017-11-05T17:00:00+01",
+        "no2": 219.48791556060314,
+        "name": "Dresden-Bergstraße",
+        "pm10": 331.8000156036578,
+        "no": 20,
+        "predictedpm10": 33.36043440877442
+    }
+}, {
+    "_id": "dd60c1fb02c71302e7298950440b106c",
+    "_rev": "1-93762982aa4a7598613513469e363b13",
+    "geometry": {"type": "Point", "coordinates": [-80.62855033669621, 84.93179717101157]},
+    "type": "Feature",
+    "properties": {
+        "date": "2017-11-05T17:00:00+01",
+        "no2": 317.196090798825,
+        "name": "Dresden-Nord",
+        "pm10": 271.6164398705587,
+        "no": 8,
+        "predictedpm10": 31.162505071692195
+    }
+}, {
+    "_id": "dd60c1fb02c71302e7298950440b15ab",
+    "_rev": "1-bd5561e10c07b623d5f1d31d12cd3805",
+    "geometry": {"type": "Point", "coordinates": [41.02455012034625, -120.02419559285045]},
+    "type": "Feature",
+    "properties": {
+        "date": "2017-11-05T17:00:00+01",
+        "no2": 4.925309307873249,
+        "name": "Dresden-Winckelmannstr",
+        "pm10": 311.882347939536,
+        "no": 1,
+        "predictedpm10": 32.97768724814451
+    }
+}, {
+    "_id": "dd60c1fb02c71302e7298950440b15f7",
+    "_rev": "1-062c6066713591847f773a8b335ac656",
+    "geometry": {"type": "Point", "coordinates": [-43.378815916366875, -179.2581815365702]},
+    "type": "Feature",
+    "properties": {
+        "date": "2017-11-05T18:00:00+01",
+        "no2": 317.17426097020507,
+        "name": "Dresden-Bergstraße",
+        "pm10": 160.33439117483795,
+        "no": 20,
+        "predictedpm10": 30.277660504035914
+    }
+}, {
+    "_id": "dd60c1fb02c71302e7298950440b1e2b",
+    "_rev": "1-3d6f3f663690354833f14f5e26a88e2b",
+    "geometry": {"type": "Point", "coordinates": [-23.847238761372864, 96.36089346371591]},
+    "type": "Feature",
+    "properties": {
+        "date": "2017-11-05T18:00:00+01",
+        "no2": 6.129948608577251,
+        "name": "Dresden-Nord",
+        "pm10": 170.3236536704935,
+        "no": 8,
+        "predictedpm10": 28.49446598296132
+    }
+}, {
+    "_id": "dd60c1fb02c71302e7298950440b2c62",
+    "_rev": "1-ebd4617f693a05f298b0c12d63fb3590",
+    "geometry": {"type": "Point", "coordinates": [-23.282228708267212, -168.73147155158222]},
+    "type": "Feature",
+    "properties": {
+        "date": "2017-11-05T18:00:00+01",
+        "no2": 94.55204252153635,
+        "name": "Dresden-Winckelmannstr",
+        "pm10": 217.75585784576833,
+        "no": 1,
+        "predictedpm10": 33.18039368426286
+    }
+}, {
+    "_id": "dd60c1fb02c71302e7298950440b3c56",
+    "_rev": "1-19da8fba4dedf483f6c78b01d8a3cb48",
+    "geometry": {"type": "Point", "coordinates": [22.41844512987882, 13.500723391771317]},
+    "type": "Feature",
+    "properties": {
+        "date": "2017-11-05T19:00:00+01",
+        "no2": 199.96567582711577,
+        "name": "Dresden-Bergstraße",
+        "pm10": 277.12032289477065,
+        "no": 20,
+        "predictedpm10": 30.196312342502168
+    }
+}, {
+    "_id": "dd60c1fb02c71302e7298950440b467f",
+    "_rev": "1-df659ed183473ba98dadddde33b5a5ba",
+    "geometry": {"type": "Point", "coordinates": [22.9822302935645, -138.6082804016769]},
+    "type": "Feature",
+    "properties": {
+        "date": "2017-11-05T19:00:00+01",
+        "no2": 315.141311660409,
+        "name": "Dresden-Nord",
+        "pm10": 84.11676765186712,
+        "no": 8,
+        "predictedpm10": 31.457814377558336
+    }
+}, {
+    "_id": "dd60c1fb02c71302e7298950440b5187",
+    "_rev": "1-e42dc088147f4417c2dd93cb278d2c8e",
+    "geometry": {"type": "Point", "coordinates": [56.98818105272949, -101.21073480695486]},
+    "type": "Feature",
+    "properties": {
+        "date": "2017-11-05T19:00:00+01",
+        "no2": 328.8799944333732,
+        "name": "Dresden-Winckelmannstr",
+        "pm10": 83.71536194812506,
+        "no": 1,
+        "predictedpm10": 33.14995826906256
+    }
+}, {
+    "_id": "dd60c1fb02c71302e7298950440b5a48",
+    "_rev": "1-79f03d860ec3cdd3c44f9d8dc9e9dea3",
+    "geometry": {"type": "Point", "coordinates": [34.37724325340241, 91.57236825674772]},
+    "type": "Feature",
+    "properties": {
+        "date": "2017-11-05T20:00:00+01",
+        "no2": 150.9371655061841,
+        "name": "Dresden-Bergstraße",
+        "pm10": 25.35746378125623,
+        "no": 20,
+        "predictedpm10": 32.04702103864449
+    }
+}, {
+    "_id": "dd60c1fb02c71302e7298950440b5ee5",
+    "_rev": "1-ca12fa8cc703eb0c18b3056903ee7da6",
+    "geometry": {"type": "Point", "coordinates": [-38.501289314590394, 168.19213539361954]},
+    "type": "Feature",
+    "properties": {
+        "date": "2017-11-05T20:00:00+01",
+        "no2": 107.96245597302914,
+        "name": "Dresden-Nord",
+        "pm10": 285.83846007008106,
+        "no": 8,
+        "predictedpm10": 31.871806740893472
+    }
+}, {
+    "_id": "dd60c1fb02c71302e7298950440b6396",
+    "_rev": "1-20e47b08c12b2c93beb78f1d2cb1575d",
+    "geometry": {"type": "Point", "coordinates": [-53.82401168346405, -94.65772510506213]},
+    "type": "Feature",
+    "properties": {
+        "date": "2017-11-05T20:00:00+01",
+        "no2": 114.3018196336925,
+        "name": "Dresden-Winckelmannstr",
+        "pm10": 298.68563305353746,
+        "no": 1,
+        "predictedpm10": 35.525701298639284
+    }
+}, {
+    "_id": "dd60c1fb02c71302e7298950440b6810",
+    "_rev": "1-c47a663974ba7dc14be5579deadeddb0",
+    "geometry": {"type": "Point", "coordinates": [26.651037842966616, -117.3853621724993]},
+    "type": "Feature",
+    "properties": {
+        "date": "2017-11-05T21:00:00+01",
+        "no2": 259.2213121242821,
+        "name": "Dresden-Bergstraße",
+        "pm10": 201.64198122452945,
+        "no": 20,
+        "predictedpm10": 31.604947691531418
+    }
+}, {
+    "_id": "dd60c1fb02c71302e7298950440b6ac3",
+    "_rev": "1-c4f7ba8af22872ec781ade98c5cd2342",
+    "geometry": {"type": "Point", "coordinates": [-48.28203300945461, -36.684122337028384]},
+    "type": "Feature",
+    "properties": {
+        "date": "2017-11-05T21:00:00+01",
+        "no2": 242.91311632841825,
+        "name": "Dresden-Nord",
+        "pm10": 103.29408311052248,
+        "no": 8,
+        "predictedpm10": 32.938133810550205
+    }
+}, {
+    "_id": "dd60c1fb02c71302e7298950440b72ae",
+    "_rev": "1-adea31dd8e45a8f6bc41d4e64d7ddc3e",
+    "geometry": {"type": "Point", "coordinates": [13.426916794851422, 94.0567940287292]},
+    "type": "Feature",
+    "properties": {
+        "date": "2017-11-05T21:00:00+01",
+        "no2": 179.25549503415823,
+        "name": "Dresden-Winckelmannstr",
+        "pm10": 257.8984805219807,
+        "no": 1,
+        "predictedpm10": 34.71068927911359
+    }
+}, {
+    "_id": "dd60c1fb02c71302e7298950440b7a58",
+    "_rev": "1-0cc9dbd8a7c778d25d8e688c9c35bf30",
+    "geometry": {"type": "Point", "coordinates": [-70.79203509259969, -2.6898917835205793]},
+    "type": "Feature",
+    "properties": {
+        "date": "2017-11-05T22:00:00+01",
+        "no2": 359.4422980211675,
+        "name": "Dresden-Bergstraße",
+        "pm10": 216.36775311315432,
+        "no": 20,
+        "predictedpm10": 32.627118852043274
+    }
+}, {
+    "_id": "dd60c1fb02c71302e7298950440b7e1f",
+    "_rev": "1-c794c396bb8d57f34967b25a890734d5",
+    "geometry": {"type": "Point", "coordinates": [-11.06180100236088, 158.38427687063813]},
+    "type": "Feature",
+    "properties": {
+        "date": "2017-11-05T22:00:00+01",
+        "no2": 134.57920402288437,
+        "name": "Dresden-Nord",
+        "pm10": 65.35237627802417,
+        "no": 8,
+        "predictedpm10": 28.545619143587274
+    }
+}, {
+    "_id": "dd60c1fb02c71302e7298950440b8977",
+    "_rev": "1-e9b0e14e0effd8a4ff1997681dd7c8a0",
+    "geometry": {"type": "Point", "coordinates": [-61.695275525562465, -21.56134662218392]},
+    "type": "Feature",
+    "properties": {
+        "date": "2017-11-05T22:00:00+01",
+        "no2": 128.4670173190534,
+        "name": "Dresden-Winckelmannstr",
+        "pm10": 344.7817981336266,
+        "no": 1,
+        "predictedpm10": 34.53860019254903
+    }
+}, {
+    "_id": "dd60c1fb02c71302e7298950440b8a8a",
+    "_rev": "1-f048fc64caddc04b544f0fc3d503bf57",
+    "geometry": {"type": "Point", "coordinates": [3.7501480942592025, -8.780858293175697]},
+    "type": "Feature",
+    "properties": {
+        "date": "2017-11-05T23:00:00+01",
+        "no2": 22.997691854834557,
+        "name": "Dresden-Bergstraße",
+        "pm10": 242.2126798192039,
+        "no": 20,
+        "predictedpm10": 30.002695035825855
+    }
+}, {
+    "_id": "dd60c1fb02c71302e7298950440b9227",
+    "_rev": "1-8e8ab3a8e19c178bd55bf3ddd6716e25",
+    "geometry": {"type": "Point", "coordinates": [27.052286379039288, -82.10653865709901]},
+    "type": "Feature",
+    "properties": {
+        "date": "2017-11-05T23:00:00+01",
+        "no2": 27.096821274608374,
+        "name": "Dresden-Nord",
+        "pm10": 308.6942955548875,
+        "no": 8,
+        "predictedpm10": 28.800877447076424
+    }
+}, {
+    "_id": "dd60c1fb02c71302e7298950440b9fe7",
+    "_rev": "1-d7a14fc8974f31abf06e048835280be7",
+    "geometry": {"type": "Point", "coordinates": [49.467081064358354, -150.48036203719676]},
+    "type": "Feature",
+    "properties": {
+        "date": "2017-11-05T23:00:00+01",
+        "no2": 254.19970313087106,
+        "name": "Dresden-Winckelmannstr",
+        "pm10": 199.6381570561789,
+        "no": 1,
+        "predictedpm10": 31.956204395939668
+    }
+}, {
+    "_id": "dd60c1fb02c71302e7298950440ba71c",
+    "_rev": "1-83012eee1be8f095369974b1dff4765f",
+    "geometry": {"type": "Point", "coordinates": [11.055688206106424, 58.98341833613813]},
+    "type": "Feature",
+    "properties": {
+        "date": "2017-11-06T00:00:00+01",
+        "no2": 271.2299173697829,
+        "name": "Dresden-Bergstraße",
+        "pm10": 26.74137010006234,
+        "no": 50,
+        "predictedpm10": 20.20537768183971
+    }
+}, {
+    "_id": "dd60c1fb02c71302e7298950440bb14c",
+    "_rev": "1-daf847010df6f253db2b4882752b7b6a",
+    "geometry": {"type": "Point", "coordinates": [-9.31187101174146, 149.11572072654963]},
+    "type": "Feature",
+    "properties": {
+        "date": "2017-11-06T00:00:00+01",
+        "no2": 346.29420787096024,
+        "name": "Dresden-Nord",
+        "pm10": 380.9586204518564,
+        "no": 32,
+        "predictedpm10": 22.246290705514568
+    }
+}, {
+    "_id": "dd60c1fb02c71302e7298950440bb663",
+    "_rev": "1-640c81b0ee5f770316a51d85ce835773",
+    "geometry": {"type": "Point", "coordinates": [11.959429322741926, 104.63527861051261]},
+    "type": "Feature",
+    "properties": {
+        "date": "2017-11-06T00:00:00+01",
+        "no2": 222.85624109208584,
+        "name": "Dresden-Winckelmannstr",
+        "pm10": 262.1513185277581,
+        "no": 4,
+        "predictedpm10": 22.003362250514943
+    }
+}, {
+    "_id": "dd60c1fb02c71302e7298950440bbefb",
+    "_rev": "1-4fb46a2d6d4676f5014751b3685bbe0c",
+    "geometry": {"type": "Point", "coordinates": [45.41927025653422, 128.4271323122084]},
+    "type": "Feature",
+    "properties": {
+        "date": "2017-11-06T01:00:00+01",
+        "no2": 203.11887403950095,
+        "name": "Dresden-Bergstraße",
+        "pm10": 243.36207256419584,
+        "no": 50,
+        "predictedpm10": 19.593907471732766
+    }
+}, {
+    "_id": "dd60c1fb02c71302e7298950440bc95a",
+    "_rev": "1-71bd0070cb73359d828799e83a07095e",
+    "geometry": {"type": "Point", "coordinates": [50.27164000086486, -86.24320073984563]},
+    "type": "Feature",
+    "properties": {
+        "date": "2017-11-06T01:00:00+01",
+        "no2": 31.898742727935314,
+        "name": "Dresden-Nord",
+        "pm10": 234.37807793030515,
+        "no": 32,
+        "predictedpm10": 26.965331121051193
+    }
+}, {
+    "_id": "dd60c1fb02c71302e7298950440bcd12",
+    "_rev": "1-34a0aa763f47e94f37ca296b0afd0b92",
+    "geometry": {"type": "Point", "coordinates": [-54.095954610966146, -85.1100820954889]},
+    "type": "Feature",
+    "properties": {
+        "date": "2017-11-06T01:00:00+01",
+        "no2": 178.22527401149273,
+        "name": "Dresden-Winckelmannstr",
+        "pm10": 59.183000163175166,
+        "no": 4,
+        "predictedpm10": 21.79310806243346
+    }
+}, {
+    "_id": "dd60c1fb02c71302e7298950440bd9d0",
+    "_rev": "1-b4529ef6989ef27ab349e1ea17d52a88",
+    "geometry": {"type": "Point", "coordinates": [69.50437758117914, 1.4847566653043032]},
+    "type": "Feature",
+    "properties": {
+        "date": "2017-11-06T02:00:00+01",
+        "no2": 211.33545776829123,
+        "name": "Dresden-Bergstraße",
+        "pm10": 415.54174220887944,
+        "no": 50,
+        "predictedpm10": 22.4034057873924
+    }
+}, {
+    "_id": "dd60c1fb02c71302e7298950440be180",
+    "_rev": "1-f003cce72bdb0221e73ae982b39eaf76",
+    "geometry": {"type": "Point", "coordinates": [-61.49242290761322, -114.5556730683893]},
+    "type": "Feature",
+    "properties": {
+        "date": "2017-11-06T02:00:00+01",
+        "no2": 339.0599101781845,
+        "name": "Dresden-Nord",
+        "pm10": 212.78764967340976,
+        "no": 32,
+        "predictedpm10": 24.66159266686419
+    }
+}, {
+    "_id": "dd60c1fb02c71302e7298950440beaa0",
+    "_rev": "1-d2c110a5251a7e45bc6a8ff8b7784c06",
+    "geometry": {"type": "Point", "coordinates": [-48.37477570865303, 153.69488376192749]},
+    "type": "Feature",
+    "properties": {
+        "date": "2017-11-06T02:00:00+01",
+        "no2": 348.7749947234988,
+        "name": "Dresden-Winckelmannstr",
+        "pm10": 317.890932764858,
+        "no": 4,
+        "predictedpm10": 21.785668661715434
+    }
+}, {
+    "_id": "dd60c1fb02c71302e7298950440bf9e1",
+    "_rev": "1-c487ff8f88556eabce8ceea8a528ee6f",
+    "geometry": {"type": "Point", "coordinates": [39.36658968217671, 122.40887260995805]},
+    "type": "Feature",
+    "properties": {
+        "date": "2017-11-06T03:00:00+01",
+        "no2": 238.94550623372197,
+        "name": "Dresden-Bergstraße",
+        "pm10": 73.6399986804463,
+        "no": 50,
+        "predictedpm10": 19.348474922067208
+    }
+}, {
+    "_id": "dd60c1fb02c71302e7298950440bfe4b",
+    "_rev": "1-2e2cf7263a8c5d3a794fdddfe1332833",
+    "geometry": {"type": "Point", "coordinates": [77.68546749372035, 128.84541182778776]},
+    "type": "Feature",
+    "properties": {
+        "date": "2017-11-06T03:00:00+01",
+        "no2": 356.6718087531626,
+        "name": "Dresden-Nord",
+        "pm10": 129.46881702169776,
+        "no": 32,
+        "predictedpm10": 23.154878584260565
+    }
+}, {
+    "_id": "dd60c1fb02c71302e7298950440c029e",
+    "_rev": "1-ccc933fd7117a8fa400d629f97d8215c",
+    "geometry": {"type": "Point", "coordinates": [44.118109750561416, -125.39096675813198]},
+    "type": "Feature",
+    "properties": {
+        "date": "2017-11-06T03:00:00+01",
+        "no2": 264.37346702441573,
+        "name": "Dresden-Winckelmannstr",
+        "pm10": 429.82551528373733,
+        "no": 4,
+        "predictedpm10": 21.294713707768278
+    }
+}, {
+    "_id": "dd60c1fb02c71302e7298950440c10e4",
+    "_rev": "1-bc004a708f7076417b3cb83daef7173e",
+    "geometry": {"type": "Point", "coordinates": [-7.692757467739284, 57.632973454892635]},
+    "type": "Feature",
+    "properties": {
+        "date": "2017-11-06T04:00:00+01",
+        "no2": 372.13579155504704,
+        "name": "Dresden-Bergstraße",
+        "pm10": 355.2389886905439,
+        "no": 50,
+        "predictedpm10": 22.446239145043386
+    }
+}, {
+    "_id": "dd60c1fb02c71302e7298950440c148d",
+    "_rev": "1-6cbef5fe1076f9ee933eec6d73890df6",
+    "geometry": {"type": "Point", "coordinates": [27.109722238965333, 152.4381689261645]},
+    "type": "Feature",
+    "properties": {
+        "date": "2017-11-06T04:00:00+01",
+        "no2": 8.003639988601208,
+        "name": "Dresden-Nord",
+        "pm10": 358.88051772257313,
+        "no": 32,
+        "predictedpm10": 26.541536975227324
+    }
+}, {
+    "_id": "dd60c1fb02c71302e7298950440c2424",
+    "_rev": "1-d88c2b1a3b8e8d5e3223e083f9e5613f",
+    "geometry": {"type": "Point", "coordinates": [-75.20890528801829, 74.96957181952894]},
+    "type": "Feature",
+    "properties": {
+        "date": "2017-11-06T04:00:00+01",
+        "no2": 374.92806501686573,
+        "name": "Dresden-Winckelmannstr",
+        "pm10": 126.74854572629556,
+        "no": 4,
+        "predictedpm10": 20.306844849198274
+    }
+}, {
+    "_id": "dd60c1fb02c71302e7298950440c2737",
+    "_rev": "1-c73a37c21c3b2206f6d0df0267cb79d5",
+    "geometry": {"type": "Point", "coordinates": [-84.10124188754708, -151.05606492608786]},
+    "type": "Feature",
+    "properties": {
+        "date": "2017-11-06T05:00:00+01",
+        "no2": 228.43757811933756,
+        "name": "Dresden-Bergstraße",
+        "pm10": 117.13797004427761,
+        "no": 50,
+        "predictedpm10": 22.855540811663552
+    }
+}, {
+    "_id": "dd60c1fb02c71302e7298950440c27ea",
+    "_rev": "1-4cf0a67cccf5e5cf3b5c71d70b579104",
+    "geometry": {"type": "Point", "coordinates": [-45.303404233418405, -138.8779338542372]},
+    "type": "Feature",
+    "properties": {
+        "date": "2017-11-06T05:00:00+01",
+        "no2": 295.3000078909099,
+        "name": "Dresden-Nord",
+        "pm10": 166.03009270271286,
+        "no": 32,
+        "predictedpm10": 24.36256338671746
+    }
+}, {
+    "_id": "dd60c1fb02c71302e7298950440c37c5",
+    "_rev": "1-5bc484e28045bf68fc64e58f7cf9c959",
+    "geometry": {"type": "Point", "coordinates": [-27.08484449889511, 135.9084678813815]},
+    "type": "Feature",
+    "properties": {
+        "date": "2017-11-06T05:00:00+01",
+        "no2": 171.01007727906108,
+        "name": "Dresden-Winckelmannstr",
+        "pm10": 328.7668886431493,
+        "no": 4,
+        "predictedpm10": 21.5281436079905
+    }
+}, {
+    "_id": "dd60c1fb02c71302e7298950440c477a",
+    "_rev": "1-232dddbb033dee32b4eda04878de1cc5",
+    "geometry": {"type": "Point", "coordinates": [-23.360775229521096, -104.54145862720907]},
+    "type": "Feature",
+    "properties": {
+        "date": "2017-11-06T06:00:00+01",
+        "no2": 250.46054609119892,
+        "name": "Dresden-Bergstraße",
+        "pm10": 386.973284392152,
+        "no": 50,
+        "predictedpm10": 22.955385048346216
+    }
+}, {
+    "_id": "dd60c1fb02c71302e7298950440c4d4b",
+    "_rev": "1-e61c6bff535d312a520907812f84cbb9",
+    "geometry": {"type": "Point", "coordinates": [31.01421306375414, 160.8048693370074]},
+    "type": "Feature",
+    "properties": {
+        "date": "2017-11-06T06:00:00+01",
+        "no2": 238.43713738024235,
+        "name": "Dresden-Nord",
+        "pm10": 42.85650869831443,
+        "no": 32,
+        "predictedpm10": 26.507098733345092
+    }
+}, {
+    "_id": "dd60c1fb02c71302e7298950440c5a83",
+    "_rev": "1-3099966f044ea7f8443016c45e18b3d5",
+    "geometry": {"type": "Point", "coordinates": [-19.92105628363788, -175.38453829474747]},
+    "type": "Feature",
+    "properties": {
+        "date": "2017-11-06T06:00:00+01",
+        "no2": 112.01819963753223,
+        "name": "Dresden-Winckelmannstr",
+        "pm10": 173.18753174273297,
+        "no": 4,
+        "predictedpm10": 18.811622100458496
+    }
+}, {
+    "_id": "dd60c1fb02c71302e7298950440c5ab1",
+    "_rev": "1-ffd5277c4fc29aa2145f99a4514202d5",
+    "geometry": {"type": "Point", "coordinates": [-65.77540883794427, 101.791300624609]},
+    "type": "Feature",
+    "properties": {
+        "date": "2017-11-06T07:00:00+01",
+        "no2": 80.72344800457358,
+        "name": "Dresden-Bergstraße",
+        "pm10": 254.79992298176512,
+        "no": 50,
+        "predictedpm10": 22.303816534823916
+    }
+}, {
+    "_id": "dd60c1fb02c71302e7298950440c64b9",
+    "_rev": "1-50d01c9c1d413bf5f8717245bcff83b6",
+    "geometry": {"type": "Point", "coordinates": [-29.898886224254966, 157.32991416938603]},
+    "type": "Feature",
+    "properties": {
+        "date": "2017-11-06T07:00:00+01",
+        "no2": 305.2592576481402,
+        "name": "Dresden-Nord",
+        "pm10": 71.48631671909243,
+        "no": 32,
+        "predictedpm10": 23.14285458701447
+    }
+}, {
+    "_id": "dd60c1fb02c71302e7298950440c6af8",
+    "_rev": "1-ab37fb1600e3c33489ee7ef306b54324",
+    "geometry": {"type": "Point", "coordinates": [60.366473933681846, -88.73550684191287]},
+    "type": "Feature",
+    "properties": {
+        "date": "2017-11-06T07:00:00+01",
+        "no2": 375.41995886713266,
+        "name": "Dresden-Winckelmannstr",
+        "pm10": 210.36312521900982,
+        "no": 4,
+        "predictedpm10": 20.817996978774648
+    }
+}, {
+    "_id": "dd60c1fb02c71302e7298950440c6f33",
+    "_rev": "1-87d842b35021353cee6c28cd1900dbc7",
+    "geometry": {"type": "Point", "coordinates": [-5.487272716127336, 103.26747572980821]},
+    "type": "Feature",
+    "properties": {
+        "date": "2017-11-06T08:00:00+01",
+        "no2": 279.59507955238223,
+        "name": "Dresden-Bergstraße",
+        "pm10": 423.79058762686327,
+        "no": 50,
+        "predictedpm10": 20.769500725452957
+    }
+}, {
+    "_id": "dd60c1fb02c71302e7298950440c71f1",
+    "_rev": "1-0c4d8c8049b25a907a22428bae00e970",
+    "geometry": {"type": "Point", "coordinates": [43.39473859872669, -37.250025272369385]},
+    "type": "Feature",
+    "properties": {
+        "date": "2017-11-06T08:00:00+01",
+        "no2": 36.29354937002063,
+        "name": "Dresden-Nord",
+        "pm10": 291.0016894945875,
+        "no": 32,
+        "predictedpm10": 23.23380668863788
+    }
+}, {
+    "_id": "dd60c1fb02c71302e7298950440c7bba",
+    "_rev": "1-28dfebd26f76fb2339a42a7e0cf9ba7f",
+    "geometry": {"type": "Point", "coordinates": [-21.08739178162068, 77.8235010523349]},
+    "type": "Feature",
+    "properties": {
+        "date": "2017-11-06T08:00:00+01",
+        "no2": 181.36599948629737,
+        "name": "Dresden-Winckelmannstr",
+        "pm10": 247.7522525144741,
+        "no": 4,
+        "predictedpm10": 18.659522728201313
+    }
+}, {
+    "_id": "dd60c1fb02c71302e7298950440c8a68",
+    "_rev": "1-87756c9f6291dbf5714e7a2efdf30ba9",
+    "geometry": {"type": "Point", "coordinates": [71.08873531222343, 57.807620046660304]},
+    "type": "Feature",
+    "properties": {
+        "date": "2017-11-06T09:00:00+01",
+        "no2": 103.42942988499999,
+        "name": "Dresden-Bergstraße",
+        "pm10": 360.70864926092327,
+        "no": 50,
+        "predictedpm10": 21.676101444698716
+    }
+}, {
+    "_id": "dd60c1fb02c71302e7298950440c976e",
+    "_rev": "1-36401e00475528666fcc173a3eef2a06",
+    "geometry": {"type": "Point", "coordinates": [-62.36859527416527, -93.28551887534559]},
+    "type": "Feature",
+    "properties": {
+        "date": "2017-11-06T09:00:00+01",
+        "no2": 33.53800317272544,
+        "name": "Dresden-Nord",
+        "pm10": 62.17189966002479,
+        "no": 32,
+        "predictedpm10": 22.136120448295323
+    }
+}, {
+    "_id": "dd60c1fb02c71302e7298950440c9acd",
+    "_rev": "1-abad39fee48950ad9531a6f67b15d5d3",
+    "geometry": {"type": "Point", "coordinates": [89.74515137728304, 48.160101380199194]},
+    "type": "Feature",
+    "properties": {
+        "date": "2017-11-06T09:00:00+01",
+        "no2": 133.60103145241737,
+        "name": "Dresden-Winckelmannstr",
+        "pm10": 250.30024827923626,
+        "no": 4,
+        "predictedpm10": 22.611969708885916
+    }
+}, {
+    "_id": "dd60c1fb02c71302e7298950440c9bd4",
+    "_rev": "1-95a2a15b1ddf796424b1f54a5e7884a6",
+    "geometry": {"type": "Point", "coordinates": [-79.66620341408998, -18.317964412271976]},
+    "type": "Feature",
+    "properties": {
+        "date": "2017-11-06T10:00:00+01",
+        "no2": 317.6271020434797,
+        "name": "Dresden-Bergstraße",
+        "pm10": 127.3635759553872,
+        "no": 50,
+        "predictedpm10": 22.805778022490735
+    }
+}, {
+    "_id": "dd60c1fb02c71302e7298950440ca0a7",
+    "_rev": "1-f7244d317d850bfa3858d024a9467dce",
+    "geometry": {"type": "Point", "coordinates": [83.1123677501455, 114.96777537278831]},
+    "type": "Feature",
+    "properties": {
+        "date": "2017-11-06T10:00:00+01",
+        "no2": 237.55094734951854,
+        "name": "Dresden-Nord",
+        "pm10": 124.77236401056871,
+        "no": 32,
+        "predictedpm10": 26.382860264786146
+    }
+}, {
+    "_id": "dd60c1fb02c71302e7298950440cabfd",
+    "_rev": "1-b8227d6121d8325a8797d51c54ee7563",
+    "geometry": {"type": "Point", "coordinates": [36.37198110111058, 24.975660648196936]},
+    "type": "Feature",
+    "properties": {
+        "date": "2017-11-06T10:00:00+01",
+        "no2": 73.93327541649342,
+        "name": "Dresden-Winckelmannstr",
+        "pm10": 394.4120879401453,
+        "no": 4,
+        "predictedpm10": 18.754839129761557
+    }
+}, {
+    "_id": "dd60c1fb02c71302e7298950440cacc6",
+    "_rev": "1-a78a11baa642099c473165bd0bddc977",
+    "geometry": {"type": "Point", "coordinates": [32.00282970909029, -122.70899067632854]},
+    "type": "Feature",
+    "properties": {
+        "date": "2017-11-06T11:00:00+01",
+        "no2": 381.4117509871721,
+        "name": "Dresden-Bergstraße",
+        "pm10": 386.3071089028381,
+        "no": 50,
+        "predictedpm10": 21.53489885181389
+    }
+}, {
+    "_id": "dd60c1fb02c71302e7298950440cb1a7",
+    "_rev": "1-da0a2d73c0f733dfb41503be30c5ec41",
+    "geometry": {"type": "Point", "coordinates": [-73.3597263135016, 153.60683849081397]},
+    "type": "Feature",
+    "properties": {
+        "date": "2017-11-06T11:00:00+01",
+        "no2": 234.4810632057488,
+        "name": "Dresden-Nord",
+        "pm10": 119.63452380150557,
+        "no": 32,
+        "predictedpm10": 24.797957350401713
+    }
+}, {
+    "_id": "dd60c1fb02c71302e7298950440cbdbe",
+    "_rev": "1-f034e0747f7553c4c3773e75d3af0347",
+    "geometry": {"type": "Point", "coordinates": [16.802272237837315, -74.51281283050776]},
+    "type": "Feature",
+    "properties": {
+        "date": "2017-11-06T11:00:00+01",
+        "no2": 168.71589627116919,
+        "name": "Dresden-Winckelmannstr",
+        "pm10": 386.84616200858727,
+        "no": 4,
+        "predictedpm10": 20.694920241040588
+    }
+}, {
+    "_id": "dd60c1fb02c71302e7298950440cca6d",
+    "_rev": "1-4e4e6b01602ab2fc9a4d9b25f62497e9",
+    "geometry": {"type": "Point", "coordinates": [-28.70896409265697, -139.49774122796953]},
+    "type": "Feature",
+    "properties": {
+        "date": "2017-11-06T12:00:00+01",
+        "no2": 20.41744627058506,
+        "name": "Dresden-Bergstraße",
+        "pm10": 36.67313770391047,
+        "no": 50,
+        "predictedpm10": 20.319950368359482
+    }
+}, {
+    "_id": "dd60c1fb02c71302e7298950440ccebe",
+    "_rev": "1-0deb83127d3f0ae9d062e2dc5b5b0a8c",
+    "geometry": {"type": "Point", "coordinates": [-35.36859126761556, 168.69284925051033]},
+    "type": "Feature",
+    "properties": {
+        "date": "2017-11-06T12:00:00+01",
+        "no2": 337.7249580807984,
+        "name": "Dresden-Nord",
+        "pm10": 408.38445574743673,
+        "no": 32,
+        "predictedpm10": 24.080953765858887
+    }
+}, {
+    "_id": "dd60c1fb02c71302e7298950440cdeb1",
+    "_rev": "1-efad1285b3ae1522d2602c532e71da13",
+    "geometry": {"type": "Point", "coordinates": [23.816396626643836, 165.6093018874526]},
+    "type": "Feature",
+    "properties": {
+        "date": "2017-11-06T12:00:00+01",
+        "no2": 355.2113917656243,
+        "name": "Dresden-Winckelmannstr",
+        "pm10": 153.5640967474319,
+        "no": 4,
+        "predictedpm10": 18.88958326308526
+    }
+}, {
+    "_id": "dd60c1fb02c71302e7298950440cdff6",
+    "_rev": "1-469c3e8bc90f0ac6f82fccb98faa3d97",
+    "geometry": {"type": "Point", "coordinates": [-4.200450084172189, -173.0596886202693]},
+    "type": "Feature",
+    "properties": {
+        "date": "2017-11-06T13:00:00+01",
+        "no2": 328.3534721471369,
+        "name": "Dresden-Bergstraße",
+        "pm10": 270.69651739671826,
+        "no": 50,
+        "predictedpm10": 22.817243074078327
+    }
+}, {
+    "_id": "dd60c1fb02c71302e7298950440ce555",
+    "_rev": "1-c2f72bac76018eb077bceacedc5076db",
+    "geometry": {"type": "Point", "coordinates": [-1.164157041348517, -13.298122230917215]},
+    "type": "Feature",
+    "properties": {
+        "date": "2017-11-06T13:00:00+01",
+        "no2": 373.39642932638526,
+        "name": "Dresden-Nord",
+        "pm10": 424.51485180296004,
+        "no": 32,
+        "predictedpm10": 22.406714838912272
+    }
+}, {
+    "_id": "dd60c1fb02c71302e7298950440cf1ed",
+    "_rev": "1-b6e144e23986783114dd5e2207a6810d",
+    "geometry": {"type": "Point", "coordinates": [38.86160486843437, -0.7422048691660166]},
+    "type": "Feature",
+    "properties": {
+        "date": "2017-11-06T13:00:00+01",
+        "no2": 321.2253020144999,
+        "name": "Dresden-Winckelmannstr",
+        "pm10": 117.77110596420243,
+        "no": 4,
+        "predictedpm10": 19.100783237149102
+    }
+}, {
+    "_id": "dd60c1fb02c71302e7298950440cfd9c",
+    "_rev": "1-512f449709678630395bccadd9dac2f2",
+    "geometry": {"type": "Point", "coordinates": [-16.852217065170407, 70.44281168840826]},
+    "type": "Feature",
+    "properties": {
+        "date": "2017-11-06T14:00:00+01",
+        "no2": 327.54354448989034,
+        "name": "Dresden-Bergstraße",
+        "pm10": 279.29785907501355,
+        "no": 50,
+        "predictedpm10": 20.463160801873954
+    }
+}, {
+    "_id": "dd60c1fb02c71302e7298950440d0375",
+    "_rev": "1-20cac479624ebc70e9f07520c00edde9",
+    "geometry": {"type": "Point", "coordinates": [-61.81728234048933, 84.83387567102909]},
+    "type": "Feature",
+    "properties": {
+        "date": "2017-11-06T14:00:00+01",
+        "no2": 397.08649050444365,
+        "name": "Dresden-Nord",
+        "pm10": 43.11782924691215,
+        "no": 32,
+        "predictedpm10": 24.056138104552332
+    }
+}, {
+    "_id": "dd60c1fb02c71302e7298950440d09e9",
+    "_rev": "1-b26118f600534c39b3634c8b92b03e07",
+    "geometry": {"type": "Point", "coordinates": [-70.52337129134685, 137.6062654517591]},
+    "type": "Feature",
+    "properties": {
+        "date": "2017-11-06T14:00:00+01",
+        "no2": 398.61258743330836,
+        "name": "Dresden-Winckelmannstr",
+        "pm10": 95.99471105262637,
+        "no": 4,
+        "predictedpm10": 19.9155748531104
+    }
+}]
