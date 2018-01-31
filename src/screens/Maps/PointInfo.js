@@ -7,6 +7,7 @@ import {Bar} from "react-native-pathjs-charts";
 const chartOptions = {
   width: 200,
   height: 100,
+  color: '#ffffff',
   margin: {
     top: 20,
     left: 20,
@@ -14,11 +15,9 @@ const chartOptions = {
     right: 0
   },
   color: '#2980B9',
-  gutter: 20,
   animate: {
-    type: 'oneByOne',
-    duration: 200,
-    fillTransition: 3
+    type: 'delayed',
+    duration: 200
   },
   axisX: {
     showAxis: true,
@@ -27,10 +26,12 @@ const chartOptions = {
     showTicks: true,
     zeroAxis: false,
     orient: 'bottom',
+    tickValues: [],
     label: {
+      fontFamily: 'Arial',
       fontSize: 8,
       fontWeight: true,
-      fill: '#34495E',
+      fill: '#34495E'
     }
   },
   axisY: {
@@ -40,7 +41,9 @@ const chartOptions = {
     showTicks: true,
     zeroAxis: false,
     orient: 'left',
+    tickValues: [],
     label: {
+      fontFamily: 'Arial',
       fontSize: 8,
       fontWeight: true,
       fill: '#34495E'

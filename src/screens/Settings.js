@@ -19,7 +19,7 @@ import {
 } from "native-base";
 import {dataSource} from "../data/dataService";
 import Template from "./Template";
-import {languageService} from "../lang/MessageProcessor";
+import {polutionService} from "../polution/PolutionService";
 
 
 export default class Settings extends React.Component {
@@ -29,11 +29,11 @@ export default class Settings extends React.Component {
 
     this.state = {
       radius: Number.parseInt(dataSource.getState().radius),
-      language: languageService.getCurrentLanguage(),
-      languageArray: [
-        {label: 'English', value: "en"},
-        {label: 'Русский', value: "ru"},
-        {label: 'Українська', value: "ua"}
+      polutionType: polutionService.getCurrentPolution(),
+      polutionTypeArray: [
+        {label: 'pm10', value: "pm10"},
+        // {label: 'pm2.5', value: "pm2.5"},
+        {label: 'No2', value: "No2"}
       ]
     }
     console.log(this.state);
@@ -45,10 +45,11 @@ export default class Settings extends React.Component {
     this.setState({"radius": val});
   }
 
-  setLanguage(value) {
+  setPolution(value) {
+    console.log("setting polution",value);
     console.log("setting language");
-    languageService.setLanguage(value);
-    this.setState({"language": value,languageArray:this.state.languageArray});
+    polutionService.setPolution(value, "lala");
+    this.setState({"polutionType": value,polutionTypeArray:this.state.polutionTypeArray});
   }
 
   render() {
@@ -56,35 +57,21 @@ export default class Settings extends React.Component {
         <Container>
           <Content>
 
-              <H2 style={[styles.text__indents, styles.text__center]}>{languageService.getMessage("settings_radiusSettings")}</H2>
-            <Slider
-                step={1}
-                minimumValue={3}
-                maximumValue={20}
-                value={this.state.radius}
-                onSlidingComplete={val => this.setRadius(val)}
-            />
-            <Text style={{textAlign:"center"}}>
-              {languageService.getMessage("settings_radius")}
-              {this.state.radius}
-              {languageService.getMessage("settings_km")}
-              </Text>
-
-            <H2 style={[styles.text__indents, styles.text__center]}>{languageService.getMessage("settings_languageSettings")}</H2>
+            <H2 style={[styles.text__indents, styles.text__center]}>Prefered polution type</H2>
             <List>
-              {this.state.languageArray.map((item, index) =>{
+              {this.state.polutionTypeArray.map((item, index) =>{
                 return (
                     <ListItem
                         key = {index}
                         button={true}
-                        onPress={() => this.setLanguage(item.value)}
+                        onPress={() => this.setPolution(item.value)}
                     >
                       <Body>
                       <Text>{item.label}</Text>
                       </Body>
                       <Right>
                         <Radio
-                            selected={item.value === this.state.language}
+                            selected={item.value === this.state.polutionType}
                         />
                       </Right>
                     </ListItem>
@@ -94,7 +81,7 @@ export default class Settings extends React.Component {
           </Content>
         </Container>
     );
-    return (<Template {...this.props} content={content} title={languageService.getMessage("settings_title")}/>);
+    return (<Template {...this.props} content={content} title={"Settings"}/>);
 
   }
 }

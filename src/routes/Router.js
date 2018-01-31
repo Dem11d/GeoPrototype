@@ -9,9 +9,12 @@ import {
 import Maps from "../screens/Maps/Maps";
 import Help from "../screens/Help";
 import {SideBar} from "./sidebar";
+import Settings from "../screens/Settings";
 
 export default DrawerNavigator({
       "AQI category": {screen: Maps},
+      "Settings": {screen: Settings},
+      "Help": {screen: Help},
     }
 );
 

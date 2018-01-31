@@ -8,8 +8,8 @@ class DataService {
 
   }
   async initStorage(){
-    await this.loadFromStorage("userId", null);
-    await this.loadFromStorage("language", config.defaultLanguage);
+    // await this.loadFromStorage("userId", null);
+    // await this.loadFromStorage("language", config.defaultLanguage);
   }
 
   updateState(updates) {

@@ -22,6 +22,7 @@ import {
   H3
 } from 'native-base';
 import {PointInfo} from "./PointInfo";
+import {dataSource} from "../../data/dataService";
 
 
 const aqi = [
@@ -63,19 +64,24 @@ const getAqi = (point) => getMaxValue(point);
 export {getAqi};
 
 const getMaxValue = (point) => {
+  let preferedPolution = dataSource.getState().polutionType;
+  console.log("--------------"+preferedPolution+"--------------");
+  console.log(preferedPolution);
   if (point.properties) {
     const prop = point.properties;
     const no2Contentration = checkConcentration(no2, prop.no2);
     const pm10Concentration = checkConcentration(pm10, prop.pm10);
+    const values = {No2:no2Contentration, pm10:pm10Concentration};
 
-    const max = Math.max(no2Contentration, pm10Concentration);
-    const result = Math.floor(max);
-    if (Number.isNaN(result)) {
-      console.log("NaN", this.props.pointData);
-      console.log(no2Contentration);
-      console.log(pm10Concentration);
-    }
-    return Math.floor(max);
+    // const max = Math.max(no2Contentration, pm10Concentration);
+    // const result = Math.floor(max);
+    // if (Number.isNaN(result)) {
+    //   console.log("NaN", this.props.pointData);
+    //   console.log(no2Contentration);
+    //   console.log(pm10Concentration);
+    // }
+    // return max;
+    return values[preferedPolution];
   }
 }
 
@@ -83,6 +89,7 @@ export class InfoPointer extends React.Component {
   constructor(props) {
     super(props);
     const max = getMaxValue(this.props.pointData);
+    console.log("max value = ",max);
 
     this.state = {
       symbolWidth: new Animated.Value(30),
@@ -178,7 +185,7 @@ export class InfoPointer extends React.Component {
         >
           {/*{markerView}*/}
           <View style={[styles.infoPoint_view, {backgroundColor: this.state.color}]}>
-            <Text style={styles.infoPoint_text}>{this.state.maxValue}</Text>
+            {/*<Text style={styles.infoPoint_text}>{this.state.maxValue}</Text>*/}
           </View>
           <MapView.Callout style={{
             width:230,

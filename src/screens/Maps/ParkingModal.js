@@ -1,7 +1,7 @@
 import {Button, Text, View} from "native-base";
 import {ScrollView} from "react-native";
 import {Parking} from "./Parking";
-import {languageService} from "../../lang/MessageProcessor";
+import {polutionService} from "../../polution/PolutionService";
 import * as React from "react";
 import Modal from 'react-native-modal'
 
@@ -31,7 +31,7 @@ export class ParkingModal extends React.Component {
                 style={{marginTop: 7}}
                 onPress={this.props.hideModal}>
               <Text>
-                {languageService.getMessage("maps_modal_close")}
+                {polutionService.getMessage("maps_modal_close")}
               </Text>
             </Button>
           </ScrollView>

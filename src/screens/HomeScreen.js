@@ -8,7 +8,7 @@ import {Button, Content, Spinner} from "native-base";
 import Maps from "./Maps/Maps";
 import {dataSource} from "../data/dataService";
 import {googleAuth} from "../auth";
-import {languageService} from "../lang/MessageProcessor";
+import {polutionService} from "../polution/PolutionService";
 
 
 export default class HomeScreen extends React.Component {
@@ -55,7 +55,7 @@ export default class HomeScreen extends React.Component {
               primary
               onPress={() => this.handleSigninGoogle()}>
             <Text style={styles.textButtonStyle}>
-              {languageService.getMessage("home_authButton")}
+              {polutionService.getMessage("home_authButton")}
             </Text>
           </Button>
           <Text>  {this.state.userId} </Text>

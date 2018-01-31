@@ -14,6 +14,9 @@ import {
 import {InfoPointer} from "./InfoPointer";
 import Gradient from "./Gradient";
 import {getAqi} from "./InfoPointer";
+import {locationService} from "../../location/LocationService";
+import {dataSource} from "../../data/dataService";
+
 
 let dataPoints = (require('GeoPrototype/assets/changedData.json'));
 //     .docs.map(point => {
@@ -35,7 +38,7 @@ export default class Maps extends React.Component {
       activeMarker: null,
       filterData: [0, 500],
       points: [],
-      latitude:49.05053875348836,
+      latitude: 49.05053875348836,
       longitude: 31.361325569450855,
       latitudeDelta: 20.0000467769713,
       longitudeDelta: 20.0421,
@@ -47,12 +50,30 @@ export default class Maps extends React.Component {
       isParkingModalVisible: false,
       parkingToShow: null,
       pointToShow: null,
-      ready: true,
+      ready: false,
 
     };
   }
 
   async componentDidMount() {
+    let callbacks = [];
+    if (dataSource.getState().currentPosition) {
+      this.setState({
+        usersLongitude: dataSource.getState().currentPosition.longitude,
+        usersLatitude: dataSource.getState().currentPosition.latitude,
+        longitude: dataSource.getState().currentPosition.longitude,
+        latitude: dataSource.getState().currentPosition.latitude,
+        ready:true,
+      });
+    } else {
+      callbacks.push(locationService.addEventListener("newPosition", () => this.setState({
+        usersLongitude: dataSource.getState().currentPosition.longitude,
+        usersLatitude: dataSource.getState().currentPosition.latitude,
+        ready: true
+      })));
+    }
+      this.setState({callbacksToClear: callbacks});
+
   }
 
   _handleChangeRegion = (region) => {
@@ -89,45 +110,48 @@ export default class Maps extends React.Component {
   _changeFilter = (filterData) => {
     this.setState({filterData: filterData})
   };
-  handleMapClick(){
+
+  handleMapClick() {
     console.log("handleMapClick");
-    if(this.state.activeMarker)
+    if (this.state.activeMarker)
       this.removeActiveMarker();
   }
 
-  setActiveMarker(marker){
-    this.setState({activeMarker:marker});
+  setActiveMarker(marker) {
+    this.setState({activeMarker: marker});
   }
-  removeActiveMarker(){
-    this.setState({activeMarker:null});
+
+  removeActiveMarker() {
+    this.setState({activeMarker: null});
   }
-  animateToCoordinate(coord){
+
+  animateToCoordinate(coord) {
     this._map.animateToCoordinate(coord, 1);
   }
 
   render() {
 
     let markerContent;
-    if(this.state.activeMarker)
-      markerContent =  (<InfoPointer
-          setActiveMarker={(marker)=>this.setActiveMarker(marker)}
-          removeActiveMarker={()=>this.removeActiveMarker()}
-          key={this.state.activeMarker._id} pointData={this.state.activeMarker}
-          animateToCoordinate = {(coord)=>this.animateToCoordinate(coord)}
+    if (this.state.activeMarker)
+      markerContent = (<InfoPointer
+              setActiveMarker={(marker) => this.setActiveMarker(marker)}
+              removeActiveMarker={() => this.removeActiveMarker()}
+              key={this.state.activeMarker._id} pointData={this.state.activeMarker}
+              animateToCoordinate={(coord) => this.animateToCoordinate(coord)}
           />
-  );
+      );
 
-    else{
+    else {
       markerContent = this.state.points
-          .filter(point=>{
+          .filter(point => {
             const aqi = getAqi(point);
-            return aqi>this.state.filterData[0] && aqi<this.state.filterData[1];
+            return aqi > this.state.filterData[0] && aqi < this.state.filterData[1];
           })
           .map((point, index) => {
             return (<InfoPointer
-                setActiveMarker={(marker)=>this.setActiveMarker(marker)}
-                removeActiveMarker={()=>this.removeActiveMarker()}
-                animateToCoordinate = {(coord)=>this.animateToCoordinate(coord)}
+                setActiveMarker={(marker) => this.setActiveMarker(marker)}
+                removeActiveMarker={() => this.removeActiveMarker()}
+                animateToCoordinate={(coord) => this.animateToCoordinate(coord)}
                 key={point._id} pointData={point}/>)
           });
     }
@@ -141,7 +165,7 @@ export default class Maps extends React.Component {
                 showsMyLocationButton={true}
                 mapType={"standard"}
                 onRegionChangeComplete={this._handleChangeRegion}
-                onPress={()=>this.handleMapClick()}
+                onPress={() => this.handleMapClick()}
                 ref={component => this._map = component}
                 initialRegion={{
                   latitude: parseFloat(this.state.latitude),
@@ -149,6 +173,13 @@ export default class Maps extends React.Component {
                   latitudeDelta: parseFloat(this.state.latitudeDelta),
                   longitudeDelta: parseFloat(this.state.longitudeDelta),
                 }}>
+              <MapView.Marker
+                  image={require('GeoPrototype/assets/location/marker.png')}
+                  coordinate={{
+                    latitude: this.state.usersLatitude,
+                    longitude: this.state.usersLongitude,
+                  }}
+              />
               {markerContent}
             </MapView>
             <Gradient currentFilter={this.state.filterData} onFilterChange={this._changeFilter}/>
@@ -167,6 +198,9 @@ export default class Maps extends React.Component {
     console.log("changed region");
     // this.console.log(...region);
     console.log(...region);
+  }
+  componentWillUnmount() {
+    this.state.callbacksToClear.forEach(callback => callback());
   }
 }
 

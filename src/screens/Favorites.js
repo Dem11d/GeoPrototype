@@ -8,7 +8,7 @@ import Swiper from 'react-native-swiper';
 import {apiService} from "../api/ApiService";
 import {dataSource} from "../data/dataService";
 import {Text, View, Button, Content, Spinner} from "native-base";
-import {languageService} from "../lang/MessageProcessor";
+import {polutionService} from "../polution/PolutionService";
 
 export default class Favorites extends React.Component {
   constructor(props) {
@@ -52,7 +52,7 @@ export default class Favorites extends React.Component {
     let emptyContent = (
         <View style={{alignItems: 'center', justifyContent: 'center', flex: 1}}>
           <Text style={{textAlign:"center"}}>
-            {languageService.getMessage("favorites_empty")}
+            {polutionService.getMessage("favorites_empty")}
           </Text>
         </View>
     );
@@ -103,7 +103,7 @@ export default class Favorites extends React.Component {
                                   onPress={() => this.handleDelete(item)}
                           >
                             <Text style={[styles.name, {padding: 6}]}>
-                              {languageService.getMessage("favorites_deleteParking")}
+                              {polutionService.getMessage("favorites_deleteParking")}
                             </Text>
                           </Button>
                         </Content>
@@ -121,7 +121,7 @@ export default class Favorites extends React.Component {
 
     let content = this.state.ready ? readyContent : spinner;
     return (
-        <Template {...this.props} title= {languageService.getMessage("favorites_title")} content={content}/>
+        <Template {...this.props} title= {polutionService.getMessage("favorites_title")} content={content}/>
     )
   }
 }
