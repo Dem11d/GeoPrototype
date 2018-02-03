@@ -45,7 +45,6 @@ export default class LineChart extends Component {
     componentWillUpdate() {
         LayoutAnimation.configureNext(LayoutAnimation.Presets.easeInEaseOut);
     }
-
     onPress = (e) =>   {
         const {stepX, margin} = this.state;
         let x = e.nativeEvent.locationX - margin.left;
@@ -248,7 +247,7 @@ export default class LineChart extends Component {
         });
         const axisHLabel = horizontalLines.map((item, i) => {
             return (
-                <Text key={"axislabel_" + i} fill={colors.axisTextColor} stroke="none" fontSize="10" fontWeight="normal" x={margin.left - 7} y={-(((item - minValue) * stepY) + margin.bottom + 7)} textAnchor="end">{item}€</Text>
+                <Text key={"axislabel_" + i} fill={colors.axisTextColor} stroke="none" fontSize="10" fontWeight="normal" x={margin.left - 7} y={-(((item - minValue) * stepY) + margin.bottom + 7)} textAnchor="end">{item}</Text>
             )
         });
         const axisXLabel = axis.map((item, i) => {

@@ -36,7 +36,7 @@ export default class Settings extends React.Component {
         {label: 'No2', value: "No2"}
       ]
     }
-    console.log(this.state);
+    // console.log(this.state);
   }
 
   setRadius(val) {
@@ -47,7 +47,6 @@ export default class Settings extends React.Component {
 
   setPolution(value) {
     console.log("setting polution",value);
-    console.log("setting language");
     polutionService.setPolution(value, "lala");
     this.setState({"polutionType": value,polutionTypeArray:this.state.polutionTypeArray});
   }

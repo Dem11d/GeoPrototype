@@ -15,9 +15,11 @@ export default class Gradient extends React.Component {
   render() {
     const width = 250;
     const marker = (...props) => {
-      return (    <View style={{width: 20, height: 20, borderRadius: 10, backgroundColor: "#0f5", marginTop: 20}}/>);
+      return (
+          <View style={{width: 20, height: 20, borderRadius: 10, backgroundColor: "#0f5", marginTop: 20}}/>);
     };
-    const slider = (<View style={{
+    const slider = (
+        <View style={{
       // position: "absolute",
       // flex: 1,
       // top: 0,
@@ -52,7 +54,7 @@ export default class Gradient extends React.Component {
     </View>);
 
     return (
-        <View style={{
+        <View style={[{
           position: 'absolute',
           // top: 0,
           bottom: 0,
@@ -63,7 +65,8 @@ export default class Gradient extends React.Component {
           alignItems:"center",
 
           // paddingLeft: 6
-        }}>
+        },this.props.style]}
+        >
           <View style={{
             width:width,
             justifyContent: "space-between",

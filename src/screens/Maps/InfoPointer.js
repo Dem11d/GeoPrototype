@@ -65,8 +65,6 @@ export {getAqi};
 
 const getMaxValue = (point) => {
   let preferedPolution = dataSource.getState().polutionType;
-  console.log("--------------"+preferedPolution+"--------------");
-  console.log(preferedPolution);
   if (point.properties) {
     const prop = point.properties;
     const no2Contentration = checkConcentration(no2, prop.no2);
@@ -84,12 +82,12 @@ const getMaxValue = (point) => {
     return values[preferedPolution];
   }
 }
+export default InfoPointer;
 
 export class InfoPointer extends React.Component {
   constructor(props) {
     super(props);
     const max = getMaxValue(this.props.pointData);
-    console.log("max value = ",max);
 
     this.state = {
       symbolWidth: new Animated.Value(30),
@@ -187,12 +185,12 @@ export class InfoPointer extends React.Component {
           <View style={[styles.infoPoint_view, {backgroundColor: this.state.color}]}>
             {/*<Text style={styles.infoPoint_text}>{this.state.maxValue}</Text>*/}
           </View>
-          <MapView.Callout style={{
-            width:230,
+          {/*<MapView.Callout style={{*/}
+            {/*width:230,*/}
 
-          }}>
-          <PointInfo point={this.props.pointData}/>
-          </MapView.Callout>
+          {/*}}>*/}
+          {/*/!*<PointInfo point={this.props.pointData}/>*!/*/}
+          {/*</MapView.Callout>*/}
         </MapView.Marker>
       ]);
     else return null;

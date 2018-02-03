@@ -100,7 +100,7 @@ export default class HomeScreen extends React.Component {
                 <View key={index} style={[styles.listItemRow,border]}>
                     <Text style={[styles.listItemRowText,styles.listItemRowTextTitle,color]}>{chart.labels[index]}</Text>
                     <View style={[styles.listItemRowSeparator,borderColor]}></View>
-                    <Text style={[styles.listItemRowTextValue]}>{value} €</Text>
+                    <Text style={[styles.listItemRowTextValue]}>{value}</Text>
                 </View>
             )
         })

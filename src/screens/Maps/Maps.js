@@ -16,6 +16,9 @@ import Gradient from "./Gradient";
 import {getAqi} from "./InfoPointer";
 import {locationService} from "../../location/LocationService";
 import {dataSource} from "../../data/dataService";
+import {Dimensions} from "react-native";
+import {PointInfo} from "./PointInfo";
+import {Platform} from "react-native";
 
 
 let dataPoints = (require('GeoPrototype/assets/changedData.json'));
@@ -27,6 +30,8 @@ let dataPoints = (require('GeoPrototype/assets/changedData.json'));
 //   return point;
 // }));
 // console.log(JSON.stringify(dataPoints));
+
+const {width, height} = Dimensions.get('window');
 
 export default class Maps extends React.Component {
     constructor(props) {
@@ -53,6 +58,15 @@ export default class Maps extends React.Component {
             ready: false,
 
         };
+        //holding old position
+        if(dataSource.getState().mapsLocation){
+            let region = dataSource.getState().mapsLocation;
+            this.state.latitudeDelta = region.latitudeDelta;
+            this.state.longitudeDelta = region.longitudeDelta;
+            this.state.latitude = region.latitude;
+            this.state.longitude = region.longitude;
+            console.log("exist old position")
+        }
     }
 
     async componentDidMount() {
@@ -61,8 +75,6 @@ export default class Maps extends React.Component {
             this.setState({
                 usersLongitude: dataSource.getState().currentPosition.longitude,
                 usersLatitude: dataSource.getState().currentPosition.latitude,
-                longitude: dataSource.getState().currentPosition.longitude,
-                latitude: dataSource.getState().currentPosition.latitude,
                 ready: true,
             });
         } else {
@@ -89,11 +101,11 @@ export default class Maps extends React.Component {
         let minLongitude = region.longitude - region.longitudeDelta / 2;
         let maxLongitude = region.longitude + region.longitudeDelta / 2;
 
-        console.log(`minLatitude = ${minLatitude}`);
-        console.log(`maxLatitude = ${maxLatitude}`);
-        console.log(`minLongitude = ${minLongitude}`);
-        console.log(`maxLongitude = ${maxLongitude}`);
-        console.log(region);
+        // console.log(`minLatitude = ${minLatitude}`);
+        // console.log(`maxLatitude = ${maxLatitude}`);
+        // console.log(`minLongitude = ${minLongitude}`);
+        // console.log(`maxLongitude = ${maxLongitude}`);
+        // console.log(region);
         let points = dataPoints.filter(point => {
             return (
                 minLatitude < point.geometry.coordinates[0] && point.geometry.coordinates[0] < maxLatitude
@@ -120,52 +132,45 @@ export default class Maps extends React.Component {
     handleMapClick() {
         console.log("handleMapClick");
         if (this.state.activeMarker)
-            this.removeActiveMarker();
+            this.hideBottomContent();
     }
 
     setActiveMarker(marker) {
-        this.setState({activeMarker: marker});
+        console.log("setting active marker");
+        this.setState({
+            activeMarker: marker,
+            showbottomContent: true
+        });
     }
 
-    removeActiveMarker() {
-        this.setState({activeMarker: null});
+    hideBottomContent() {
+        // this.setState({activeMarker: null});
+        this.setState({showbottomContent: false});
     }
 
     animateToCoordinate(coord) {
         this._map.animateToCoordinate(coord, 1);
+
     }
 
     render() {
 
         let markerContent;
         let bottomContent = null;
-        let mapStyle={
-           position:'absolute',
-           top:0,
-           right:0,
-            left:0,
-            flex:1,
-            minHeight: 300,
-            minWidth:300
-        }
+        let mapStyle = {};
         if (this.state.showbottomContent) {
             bottomContent = (
-                <View style={styles.container}>
-                    <Text>BottomContent</Text>
-                    <View style={styles.exit}><Text>X</Text></View>
-                </View>
-            );
-        }
-        if (this.state.activeMarker)
-            markerContent = (<InfoPointer
-                    setActiveMarker={(marker) => this.setActiveMarker(marker)}
-                    removeActiveMarker={() => this.removeActiveMarker()}
-                    key={this.state.activeMarker._id} pointData={this.state.activeMarker}
-                    animateToCoordinate={(coord) => this.animateToCoordinate(coord)}
-                />
-            );
+                <View style={styles.bottomContent}>
+                    <View style={styles.exit}><Button onPress={() => this.hideBottomContent()} rounded
+                                                      danger><Text>X</Text></Button></View>
+                    <PointInfo point={this.state.activeMarker}/>
+                </View>);
+            mapStyle = {
+                bottom: height - 350
+            };
 
-        else {
+        }
+
             markerContent = this.state.points
                 .filter(point => {
                     const aqi = getAqi(point);
@@ -174,42 +179,41 @@ export default class Maps extends React.Component {
                 .map((point, index) => {
                     return (<InfoPointer
                         setActiveMarker={(marker) => this.setActiveMarker(marker)}
-                        removeActiveMarker={() => this.removeActiveMarker()}
+                        removeActiveMarker={() => this.hideBottomContent()}
                         animateToCoordinate={(coord) => this.animateToCoordinate(coord)}
                         key={point._id} pointData={point}/>)
                 });
-        }
         let content;
+
+
         if (this.state.ready) {
             content = (
-
                 <View style={styles.container}>
-                    <View style={styles.container}>
-                        <MapView
-                            style={[styles.map,mapStyle]}
-                            showsUserLocation={true}
-                            showsMyLocationButton={true}
-                            mapType={"standard"}
-                            onRegionChangeComplete={this._handleChangeRegion}
-                            onPress={() => this.handleMapClick()}
-                            ref={component => this._map = component}
-                            initialRegion={{
-                                latitude: parseFloat(this.state.latitude),
-                                longitude: parseFloat(this.state.longitude),
-                                latitudeDelta: parseFloat(this.state.latitudeDelta),
-                                longitudeDelta: parseFloat(this.state.longitudeDelta),
-                            }}>
-                            <MapView.Marker
-                                image={require('GeoPrototype/assets/location/marker.png')}
-                                coordinate={{
-                                    latitude: this.state.usersLatitude,
-                                    longitude: this.state.usersLongitude,
-                                }}
-                            />
-                            {markerContent}
-                        </MapView>
-                        <Gradient currentFilter={this.state.filterData} onFilterChange={this._changeFilter}/>
-                    </View>
+                    <MapView
+                        style={[styles.map, mapStyle]}
+                        showsUserLocation={false}
+                        showsMyLocationButton={true}
+                        mapType={"standard"}
+                        onRegionChangeComplete={this._handleChangeRegion}
+                        onPress={() => this.handleMapClick()}
+                        ref={component => this._map = component}
+                        initialRegion={{
+                            latitude: parseFloat(this.state.latitude),
+                            longitude: parseFloat(this.state.longitude),
+                            latitudeDelta: parseFloat(this.state.latitudeDelta),
+                            longitudeDelta: parseFloat(this.state.longitudeDelta),
+                        }}>
+                        <MapView.Marker
+                            image={require('GeoPrototype/assets/location/marker.png')}
+                            coordinate={{
+                                latitude: this.state.usersLatitude,
+                                longitude: this.state.usersLongitude,
+                            }}
+                        />
+                        {markerContent}
+                    </MapView>
+                    <Gradient style={mapStyle} currentFilter={this.state.filterData}
+                              onFilterChange={this._changeFilter}/>
                     {bottomContent}
                 </View>
             );
@@ -284,11 +288,17 @@ let styles = StyleSheet.create({
         textAlign: 'center',
     },
     exit: {
+        zIndex:10,
+        position: "absolute",
+        top: 10,
+        right: 10,
+    },
+    bottomContent: {
         position: 'absolute',
-        top: 5,
-        right: 5,
-        width: 15,
-        height: 15,
-        color: '#f62'
-    }
+        top:(Platform.OS === 'ios' ? height - 350 : height - 375),
+        left: 0,
+        right: 0,
+        bottom: 0,
+        // backgroundColor:"red"
+    },
 });

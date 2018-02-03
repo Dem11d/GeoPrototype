@@ -36,9 +36,6 @@ class Event extends React.Component {
     }
 }
 
-Event.propTypes = {
-    event: PropTypes.object,
-};
 
 
 // eslint-disable-next-line react/no-multi-comp
@@ -167,9 +164,6 @@ class EventListener extends React.Component {
     }
 }
 
-EventListener.propTypes = {
-    provider: ProviderPropType,
-};
 
 const styles = StyleSheet.create({
     callout: {
@@ -187,7 +181,6 @@ const styles = StyleSheet.create({
     },
     eventData: {
         fontSize: 10,
-        fontFamily: 'courier',
         color: '#555',
     },
     eventName: {
