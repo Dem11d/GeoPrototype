@@ -1,254 +1,235 @@
 import React from 'react';
+import PropTypes from 'prop-types';
+
 import {
-  StyleSheet
+    StyleSheet,
+    View,
+    Text,
+    Dimensions,
+    ScrollView,
 } from 'react-native';
-import Template from "./Template";
-import {Body, Button, Content, Text, View} from "native-base";
-import Slider from "@ptomasroos/react-native-multi-slider";
-import {Svg} from "expo";
-import {StockLine} from "react-native-pathjs-charts";
+// eslint-disable-next-line max-len
+import MapView, { Marker, ProviderPropType, Polygon, Polyline, Callout } from 'react-native-maps';
 
-export default class Help extends React.Component {
-  render() {
-    const data = [
-      [{
-        "x": 0,
-        "y": 47782
-      }, {
-        "x": 1,
-        "y": 48497
-      }, {
-        "x": 2,
-        "y": 77128
-      }, {
-        "x": 3,
-        "y": 73413
-      }, {
-        "x": 4,
-        "y": 58257
-      }, {
-        "x": 5,
-        "y": 40579
-      }, {
-        "x": 6,
-        "y": 72893
-      }, {
-        "x": 7,
-        "y": 60663
-      }, {
-        "x": 8,
-        "y": 15715
-      }, {
-        "x": 9,
-        "y": 40305
-      }, {
-        "x": 10,
-        "y": 68592
-      }, {
-        "x": 11,
-        "y": 95664
-      }, {
-        "x": 12,
-        "y": 17908
-      }, {
-        "x": 13,
-        "y": 22838
-      }, {
-        "x": 14,
-        "y": 32153
-      }, {
-        "x": 15,
-        "y": 56594
-      }, {
-        "x": 16,
-        "y": 76348
-      }, {
-        "x": 17,
-        "y": 46222
-      }, {
-        "x": 18,
-        "y": 59304
-      }],
-      [{
-        "x": 0,
-        "y": 132189
-      }, {
-        "x": 1,
-        "y": 61705
-      }, {
-        "x": 2,
-        "y": 154976
-      }, {
-        "x": 3,
-        "y": 81304
-      }, {
-        "x": 4,
-        "y": 172572
-      }, {
-        "x": 5,
-        "y": 140656
-      }, {
-        "x": 6,
-        "y": 148606
-      }, {
-        "x": 7,
-        "y": 53010
-      }, {
-        "x": 8,
-        "y": 110783
-      }, {
-        "x": 9,
-        "y": 196446
-      }, {
-        "x": 10,
-        "y": 117057
-      }, {
-        "x": 11,
-        "y": 186765
-      }, {
-        "x": 12,
-        "y": 174908
-      }, {
-        "x": 13,
-        "y": 75247
-      }, {
-        "x": 14,
-        "y": 192894
-      }, {
-        "x": 15,
-        "y": 150356
-      }, {
-        "x": 16,
-        "y": 180360
-      }, {
-        "x": 17,
-        "y": 175697
-      }, {
-        "x": 18,
-        "y": 114967
-      }],
-      [{
-        "x": 0,
-        "y": 125797
-      }, {
-        "x": 1,
-        "y": 256656
-      }, {
-        "x": 2,
-        "y": 222260
-      }, {
-        "x": 3,
-        "y": 265642
-      }, {
-        "x": 4,
-        "y": 263902
-      }, {
-        "x": 5,
-        "y": 113453
-      }, {
-        "x": 6,
-        "y": 289461
-      }, {
-        "x": 7,
-        "y": 293850
-      }, {
-        "x": 8,
-        "y": 206079
-      }, {
-        "x": 9,
-        "y": 240859
-      }, {
-        "x": 10,
-        "y": 152776
-      }, {
-        "x": 11,
-        "y": 297282
-      }, {
-        "x": 12,
-        "y": 175177
-      }, {
-        "x": 13,
-        "y": 169233
-      }, {
-        "x": 14,
-        "y": 237827
-      }, {
-        "x": 15,
-        "y": 242429
-      }, {
-        "x": 16,
-        "y": 218230
-      }, {
-        "x": 17,
-        "y": 161511
-      }, {
-        "x": 18,
-        "y": 153227
-      }]
-    ];
-    const options = {
-      width: 250,
-      height: 250,
-      color: '#ffffff',
-      margin: {
-        top: 10,
-        left: 35,
-        bottom: 30,
-        right: 10
-      },
-      animate: {
-        type: 'delayed',
-        duration: 200
-      },
-      axisX: {
-        showAxis: true,
-        showLines: true,
-        showLabels: true,
-        showTicks: true,
-        zeroAxis: false,
-        orient: 'bottom',
-        tickValues: [],
-        label: {
-          fontFamily: 'Arial',
-          fontSize: 8,
-          fontWeight: true,
-          fill: '#34495E'
-        }
-      },
-      axisY: {
-        showAxis: true,
-        showLines: true,
-        showLabels: true,
-        showTicks: true,
-        zeroAxis: false,
-        orient: 'left',
-        tickValues: [],
-        label: {
-          fontFamily: 'Arial',
-          fontSize: 8,
-          fontWeight: true,
-          fill: '#34495E'
-        }
-      }
-    };
+const { width, height } = Dimensions.get('window');
 
+const ASPECT_RATIO = width / height;
+const LATITUDE = 37.78825;
+const LONGITUDE = -122.4324;
+const LATITUDE_DELTA = 0.0922;
+const LONGITUDE_DELTA = LATITUDE_DELTA * ASPECT_RATIO;
+let id = 0;
 
+class Event extends React.Component {
+    shouldComponentUpdate(nextProps) {
+        return this.props.event.id !== nextProps.event.id;
+    }
 
-    const content = (
-        <View style={styles.container}>
-          <StockLine data={data} options={options} xKey='x' yKey='y' />
-        </View>
-    )
-    return (
-        <Template {...this.props} title={"Help"} content={content}/>
-    )
-  }
+    render() {
+        const { event } = this.props;
+        return (
+            <View style={styles.event}>
+                <Text style={styles.eventName}>{event.name}</Text>
+                <Text style={styles.eventData}>{JSON.stringify(event.data, null, 2)}</Text>
+            </View>
+        );
+    }
 }
+
+Event.propTypes = {
+    event: PropTypes.object,
+};
+
+
+// eslint-disable-next-line react/no-multi-comp
+class EventListener extends React.Component {
+    constructor(props) {
+        super(props);
+
+        this.state = {
+            region: {
+                latitude: LATITUDE,
+                longitude: LONGITUDE,
+                latitudeDelta: LATITUDE_DELTA,
+                longitudeDelta: LONGITUDE_DELTA,
+            },
+            events: [],
+        };
+    }
+
+    makeEvent(e, name) {
+        return {
+            id: id++,
+            name,
+            data: e.nativeEvent ? e.nativeEvent : e,
+        };
+    }
+
+    recordEvent(name) {
+        return e => {
+            if (e.persist) {
+                e.persist();  // Avoids warnings relating to https://fb.me/react-event-pooling
+            }
+            this.setState(prevState => ({
+                events: [
+                    this.makeEvent(e, name),
+                    ...prevState.events.slice(0, 10),
+                ],
+            }));
+        };
+    }
+
+    render() {
+        return (
+            <View style={styles.container}>
+                <MapView
+                    provider={this.props.provider}
+                    style={styles.map}
+                    initialRegion={this.state.region}
+                    onRegionChange={this.recordEvent('Map::onRegionChange')}
+                    onRegionChangeComplete={this.recordEvent('Map::onRegionChangeComplete')}
+                    onPress={this.recordEvent('Map::onPress')}
+                    onPanDrag={this.recordEvent('Map::onPanDrag')}
+                    onLongPress={this.recordEvent('Map::onLongPress')}
+                    onMarkerPress={this.recordEvent('Map::onMarkerPress')}
+                    onMarkerSelect={this.recordEvent('Map::onMarkerSelect')}
+                    onMarkerDeselect={this.recordEvent('Map::onMarkerDeselect')}
+                    onCalloutPress={this.recordEvent('Map::onCalloutPress')}
+                >
+                    <Marker
+                        coordinate={{
+                            latitude: LATITUDE + (LATITUDE_DELTA / 2),
+                            longitude: LONGITUDE + (LONGITUDE_DELTA / 2),
+                        }}
+                    />
+                    <Marker
+                        coordinate={{
+                            latitude: LATITUDE - (LATITUDE_DELTA / 2),
+                            longitude: LONGITUDE - (LONGITUDE_DELTA / 2),
+                        }}
+                    />
+                    <Marker
+                        title="This is a title"
+                        description="This is a description"
+                        coordinate={this.state.region}
+                        onPress={this.recordEvent('Marker::onPress')}
+                        onSelect={this.recordEvent('Marker::onSelect')}
+                        onDeselect={this.recordEvent('Marker::onDeselect')}
+                        onCalloutPress={this.recordEvent('Marker::onCalloutPress')}
+                    >
+                        <Callout
+                            style={styles.callout}
+                            onPress={this.recordEvent('Callout::onPress')}
+                        >
+                            <View>
+                                <Text>Well hello there...</Text>
+                            </View>
+                        </Callout>
+                    </Marker>
+                    <Polygon
+                        fillColor={'rgba(255,0,0,0.3)'}
+                        onPress={this.recordEvent('Polygon::onPress')}
+                        tappable
+                        coordinates={[{
+                            latitude: LATITUDE + (LATITUDE_DELTA / 5),
+                            longitude: LONGITUDE + (LONGITUDE_DELTA / 4),
+                        }, {
+                            latitude: LATITUDE + (LATITUDE_DELTA / 3),
+                            longitude: LONGITUDE + (LONGITUDE_DELTA / 4),
+                        }, {
+                            latitude: LATITUDE + (LATITUDE_DELTA / 4),
+                            longitude: LONGITUDE + (LONGITUDE_DELTA / 2),
+                        }]}
+                    />
+                    <Polyline
+                        strokeColor={'rgba(255,0,0,1)'}
+                        onPress={this.recordEvent('Polyline::onPress')}
+                        tappable
+                        coordinates={[{
+                            latitude: LATITUDE + (LATITUDE_DELTA / 5),
+                            longitude: LONGITUDE - (LONGITUDE_DELTA / 4),
+                        }, {
+                            latitude: LATITUDE + (LATITUDE_DELTA / 3),
+                            longitude: LONGITUDE - (LONGITUDE_DELTA / 4),
+                        }, {
+                            latitude: LATITUDE + (LATITUDE_DELTA / 4),
+                            longitude: LONGITUDE - (LONGITUDE_DELTA / 2),
+                        }]}
+                    />
+                </MapView>
+                <View style={styles.eventList}>
+                    <ScrollView>
+                        {this.state.events.map(event => <Event key={event.id} event={event} />)}
+                    </ScrollView>
+                </View>
+            </View>
+        );
+    }
+}
+
+EventListener.propTypes = {
+    provider: ProviderPropType,
+};
+
 const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-    backgroundColor: '#f7f7f7',
-  },
+    callout: {
+        width: 60,
+    },
+    container: {
+        ...StyleSheet.absoluteFillObject,
+        justifyContent: 'flex-end',
+        alignItems: 'center',
+    },
+    event: {
+        borderBottomWidth: 1,
+        borderBottomColor: '#ccc',
+        padding: 8,
+    },
+    eventData: {
+        fontSize: 10,
+        fontFamily: 'courier',
+        color: '#555',
+    },
+    eventName: {
+        fontSize: 13,
+        fontWeight: 'bold',
+        color: '#222',
+    },
+    eventList: {
+        position: 'absolute',
+        top: height / 2,
+        left: 0,
+        right: 0,
+        bottom: 0,
+    },
+    map: {
+        position: 'absolute',
+        top: 0,
+        left: 0,
+        right: 0,
+        bottom: height / 2,
+    },
+    bubble: {
+        backgroundColor: 'rgba(255,255,255,0.7)',
+        paddingHorizontal: 18,
+        paddingVertical: 12,
+        borderRadius: 20,
+    },
+    latlng: {
+        width: 200,
+        alignItems: 'stretch',
+    },
+    button: {
+        width: 80,
+        paddingHorizontal: 12,
+        alignItems: 'center',
+        marginHorizontal: 10,
+    },
+    buttonContainer: {
+        flexDirection: 'row',
+        marginVertical: 20,
+        backgroundColor: 'transparent',
+    },
 });
+
+export default EventListener;

@@ -7,14 +7,14 @@ import {
   Content,
 } from "native-base";
 import Maps from "../screens/Maps/Maps";
-import Help from "../screens/Help";
+import Chart from "../screens/Chart";
 import {SideBar} from "./sidebar";
 import Settings from "../screens/Settings";
+import Help from "../screens/Help";
 
 export default DrawerNavigator({
       "AQI category": {screen: Maps},
       "Settings": {screen: Settings},
-      "Help": {screen: Help},
     }
 );
 
